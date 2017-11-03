@@ -1,5 +1,6 @@
 # CodecademySQL
 
+```sql
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (221, 'The Good, the Bad and the Ugly', NULL, NULL, NULL);
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (222, 'Dawn of the Dead', 'horror', 1978, NULL);
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (223, 'Shawn of the Dead', 'comedy', 2004, NULL);
@@ -10,9 +11,12 @@ INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (227, 'The Devil a
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (228, 'Ali Wong: Baby Cobra', 'comedy', 2016, NULL);
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (229, 'The Big Sick’, 'romance', 2017, NULL);
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (230, 'Deadpool', 'action', 2016, NULL);
+```
 
 ./upload workspaces/sql_unit_2 --type:sql
 
+```sql
 UPDATE movies
 SET genre = NULL
 WHERE name = 'Ali Wong: Baby Cobra';
+```
