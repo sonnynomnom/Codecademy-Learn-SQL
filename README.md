@@ -23,7 +23,87 @@ WHERE name = 'Ali Wong: Baby Cobra';
 
 
 
+
+
+
+
+
 # Multiple Tables
+
+
+
+
+
+**Checkpoint 1**
+
+Sometimes our data needs a massive change, type the following to recreate our `albums` table safely even if the table doesn't exist.
+
+```sql
+ DROP TABLE IF EXISTS albums;
+
+ CREATE TABLE IF NOT EXISTS albums(
+    id INTEGER PRIMARY KEY, 
+    name TEXT,
+    artist_id INTEGER,
+    year INTEGER);
+```
+
+**Tests.activeBatsTest('test.bats', callback);**
+
+table_exists() {
+  sqlite3 output.sqlite "SELECT * FROM $1 LIMIT 1"
+}
+
+column_exists?() {
+  sqlite3 output.sqlite "SELECT $2 FROM $1"
+}
+
+@test "Create an 'albums' table" {
+  run table_exists albums
+  [ "$status" -eq 0 ]
+}
+
+@test "Include an id column" {
+  run column_exists? albums id
+  [ "$status" -eq 0 ]
+}
+
+@test "Include a name column" {
+  run column_exists? albums name
+  [ "$status" -eq 0 ]
+}
+
+@test "Include a year column" {
+  run column_exists? albums year
+  [ "$status" -eq 0 ]
+}
+
+@test "Include a artist_id column" {
+  run column_exists? albums artist_id
+  [ "$status" -eq 0 ]
+}
+
+@test "Albums table should be empty." {
+  run sqlite3 output.sqlite "SELECT COUNT(*) FROM albums"
+  [ "$output" -eq 0 ]
+}
+
+@test "Albums table should have four columns." {
+  run sqlite3 output.sqlite "INSERT INTO albums VALUES(1,2,3,4)"
+  [ "$status" -eq 0 ]
+}
+
+@test "Albums table should have a primary key." {
+  run sqlite3 output.sqlite "INSERT INTO albums(id) VALUES(1)"
+  [ "$status" -eq 19 ]
+}
+
+@test "Delete data inserted for tests" {
+  sqlite3 output.sqlite "DELETE FROM albums WHERE id > 0"
+}
+
+
+
 
 ## 8. Multiple Table Creation (DELETED)
 
