@@ -25,8 +25,7 @@ WHERE name = 'Ali Wong: Baby Cobra';
 
 # Multiple Tables
 
-**Exercise 8. Multiple Table Creation (DELETED)**
-
+## 8. Multiple Table Creation (DELETED)
 
 **Narrative**
 
@@ -60,7 +59,7 @@ Of course, usually, we will want to recreate the table somewhat differently than
  );
 ```
 
-Tests.activeBatsTest('test.bats', callback);
+**Tests.activeBatsTest('test.bats', callback);**
 
 table_exists() {
   sqlite3 output.sqlite "SELECT * FROM $1 LIMIT 1"
@@ -131,7 +130,7 @@ cp ./.exercise_1.sqlite db.sqlite
 
 ---
 
-**Exercise 9. Foreign Key Constraints (DELETED)**
+## Exercise 9. Foreign Key Constraints (DELETED)
 
 **Narrative**
 
