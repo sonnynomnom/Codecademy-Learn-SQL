@@ -130,7 +130,7 @@ cp ./.exercise_1.sqlite db.sqlite
 
 ---
 
-## Exercise 9. Foreign Key Constraints (DELETED)
+## 9. Foreign Key Constraints (DELETED)
 
 **Narrative**
 
@@ -163,6 +163,3 @@ Let's summarize what we've learned so far.
 Command to be run the first time user starts this exercise.
 
 cp ./.exercise_1.sqlite db.sqlite
-
-
-
