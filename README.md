@@ -25,9 +25,113 @@ WHERE name = 'Ali Wong: Baby Cobra';
 
 # Multiple Tables
 
+**Exercise 8. Multiple Table Creation (DELETED)**
+
+
+**Narrative**
+
+```sql
+ DROP TABLE IF EXISTS albums;
+
+ CREATE TABLE IF NOT EXISTS albums(
+   id INTEGER PRIMARY KEY, 
+   name TEXT,
+   artist_id INTEGER,
+   year INTEGER);
+```
+
+`DROP TABLE IF EXISTS` is a SQL command that will drop a table or do nothing, depending on if the table already exists. Usually if you attempt to drop a table that does not exist your SQL client will throw an error but in this case, it will fail silently. This is best for situations where your data is in an unknown state and you intend to reseed it.
+
+`CREATE TABLE IF NOT EXISTS`, by contrast, will create a table or do nothing, depending on if the table already exists. These two are frequently used together when a database has an external source of truth and the two have fallen out of sync.
+
+**Checkpoint 1**
+
+Of course, usually, we will want to recreate the table somewhat differently than before. Let's fix something about that albums table this time. Type:
+
+```sql
+ DROP TABLE IF EXISTS albums;
+
+ CREATE TABLE IF NOT EXISTS albums(
+   id INTEGER PRIMARY KEY, 
+   name TEXT,
+   year INTEGER,
+   artist_id INTEGER,
+   FOREIGN KEY(artist_id) REFERENCES artist(id)
+ );
+```
+
+Tests.activeBatsTest('test.bats', callback);
+
+table_exists() {
+  sqlite3 output.sqlite "SELECT * FROM $1 LIMIT 1"
+}
+
+column_exists?() {
+  sqlite3 output.sqlite "SELECT $2 FROM $1"
+}
+
+get_lowercase_schema() {
+	sqlite3 output.sqlite "SELECT sql FROM sqlite_master WHERE TYPE='table' AND NAME='$1'" | tr -d '\n' | tr '[[:upper:]]' '[[:lower:]]'
+}
+
+@test "Create an 'albums' table" {
+  run table_exists albums
+  [ "$status" -eq 0 ]
+}
+
+@test "Include an id column" {
+  run column_exists? albums id
+  [ "$status" -eq 0 ]
+}
+
+@test "Include a name column" {
+  run column_exists? albums name
+  [ "$status" -eq 0 ]
+}
+
+@test "Include a year column" {
+  run column_exists? albums year
+  [ "$status" -eq 0 ]
+}
+
+@test "Include a artist_id column" {
+  run column_exists? albums artist_id
+  [ "$status" -eq 0 ]
+}
+
+@test "Albums table should be empty." {
+  run sqlite3 output.sqlite "SELECT COUNT(*) FROM albums"
+  [ "$output" -eq 0 ]
+}
+
+@test "Albums table should have four columns." {
+  run sqlite3 output.sqlite "INSERT INTO albums VALUES(1,2,3,4)"
+  [ "$status" -eq 0 ]
+}
+
+@test "Albums table should have a primary key." {
+  run sqlite3 output.sqlite "INSERT INTO albums(id) VALUES(1)"
+  [ "$status" -eq 19 ]
+}  
+
+@test "Make sure the columns have appropriate constraints set." {
+  run get_lowercase_schema albums
+  [[ $output =~ foreign[[:space:]]*key\(artist_id\)[[:space:]]*references[[:space:]]*artist\(id\) ]]
+}
+
+@test "Delete data inserted for tests" {
+  sqlite3 output.sqlite "DELETE FROM albums WHERE id > 0"
+}
+
+**Config**
+
+Command to be run the first time user starts this exercise.
+
+cp ./.exercise_1.sqlite db.sqlite
+
 ---
 
-**Exercise 9. Foreign Key Constraints**
+**Exercise 9. Foreign Key Constraints (DELETED)**
 
 **Narrative**
 
