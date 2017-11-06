@@ -128,22 +128,22 @@ Command to be run the first time user starts this exercise.
 
 cp ./.exercise_1.sqlite db.sqlite
 
----
+
 
 ## 9. Foreign Key Constraints (DELETED)
 
 **Narrative**
 
 ```sql
-DROP TABLE IF EXISTS albums;
+ DROP TABLE IF EXISTS albums;
 
-CREATE TABLE IF NOT EXISTS albums(
-  id INTEGER PRIMARY KEY, 
-  name TEXT,
-  year INTEGER,
-  artist_id INTEGER,
-  FOREIGN KEY(artist_id) REFERENCES artist(id)
-);
+ CREATE TABLE IF NOT EXISTS albums(
+   id INTEGER PRIMARY KEY, 
+   name TEXT,
+   year INTEGER,
+   artist_id INTEGER,
+   FOREIGN KEY(artist_id) REFERENCES artist(id)
+ );
 ```
 
 `FOREIGN KEY` can also be a _constraint_, specified using this syntax.
