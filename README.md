@@ -20,3 +20,46 @@ UPDATE movies
 SET genre = NULL
 WHERE name = 'Ali Wong: Baby Cobra';
 ```
+
+
+
+# Multiple Tables
+
+---
+
+**Exercise 9. Foreign Key Constraints**
+
+**Narrative**
+
+```sql
+DROP TABLE IF EXISTS albums;
+
+CREATE TABLE IF NOT EXISTS albums(
+  id INTEGER PRIMARY KEY, 
+  name TEXT,
+  year INTEGER,
+  artist_id INTEGER,
+  FOREIGN KEY(artist_id) REFERENCES artist(id)
+);
+```
+
+`FOREIGN KEY` can also be a _constraint_, specified using this syntax.
+
+`artist_id` is a column belonging to the table currently being defined. 
+
+If we try to `INSERT` data into our `albums` table where the new value for `artist_id` does not match an `id` in our `artist` table, we can't. This is valuable for validating our data (and making sure we don't insert the wrong information into our database)!
+
+**Checkpoints**
+
+In this lesson we learned about relationships between tables in relational databases. We also learned how to query data from multiple tables using SQL.
+
+Let's summarize what we've learned so far.
+
+**Config**
+
+Command to be run the first time user starts this exercise.
+
+cp ./.exercise_1.sqlite db.sqlite
+
+
+
