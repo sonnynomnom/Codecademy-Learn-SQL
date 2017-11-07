@@ -34,6 +34,73 @@ WHERE name = 'Ali Wong: Baby Cobra';
 
 
 
+## 2. Primary Key
+
+**Narrative**
+
+The primary key in the `artists` is literally an `id` value for a record. We're going to use this value to connect `artists` to the `albums` they have produced.
+
+**Checkpoint 1**
+
+We have created a table named `albums` for you. Create a second table named `artists`. 
+
+In the code editor, type:
+
+```sql
+CREATE TABLE artists(id INTEGER PRIMARY KEY, name TEXT);
+```
+
+**Tests.activeBatsTest('test.bats', callback);**
+
+table_exists() {
+  sqlite3 output.sqlite "SELECT * FROM $1 LIMIT 1"
+}
+
+column_exists?() {
+  sqlite3 output.sqlite "SELECT $2 FROM $1"
+}
+
+@test "Create an 'artists' table" {
+  run table_exists artists
+  [ "$status" -eq 0 ]
+}
+
+@test "Include an id column" {
+  run column_exists? artists id
+  [ "$status" -eq 0 ]
+}
+
+@test "Include a name column" {
+  run column_exists? artists name
+  [ "$status" -eq 0 ]
+}
+
+@test "Artists table should be empty." {
+  run sqlite3 output.sqlite "SELECT COUNT(*) FROM artists"
+  [ "$output" -eq 0 ]
+}
+
+@test "Artists table should have two columns." {
+  run sqlite3 output.sqlite "INSERT INTO artists VALUES(1,2)"
+  [ "$status" -eq 0 ]
+}
+
+@test "Artists table should have a primary key." {
+  run sqlite3 output.sqlite "INSERT INTO artists(id) VALUES(1)"
+  [ "$status" -eq 19 ]
+}
+
+@test "Delete data inserted for tests" {
+  sqlite3 output.sqlite "DELETE FROM artists WHERE id > 0"
+}
+
+
+
+
+
+
+
+
 **Checkpoint 1**
 
 Sometimes our data needs a massive change, type the following to recreate our `albums` table safely even if the table doesn't exist.
