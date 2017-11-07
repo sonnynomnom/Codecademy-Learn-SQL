@@ -23,6 +23,75 @@ WHERE name = 'Ali Wong: Baby Cobra';
 
 
 
+# Queries
+
+## 14. Case
+
+**Checkpoint 2**
+
+Following this format, edit the previous query and create our very own rating system:
+
+- IMDb ratings above 7 is 'good'
+- IMDb ratings above 5 is 'ok'
+- everything else is 'mmm'
+
+Finish the `CASE` by renaming it with an alias of your choosing.
+
+**Hint:**
+
+```sql
+SELECT name,
+ CASE
+  WHEN imdb_rating > 7 THEN 'good'
+  WHEN imdb_rating > 5 THEN 'ok'
+  ELSE 'mmm'
+ END AS whatever
+FROM movies;
+```
+
+The result should have two columns.
+
+**Tests.activeBatsTest('test2.bats', callback);**
+
+@test "The query didn't return any results." {
+    touch empty.txt
+    run diff output.txt empty.txt
+    [ "$status" -eq 1 ]
+}
+
+@test "Remove the previous query." {
+	sqlite3 output.sqlite "SELECT name,
+ CASE
+  WHEN genre = 'romance' THEN 'chill'
+  WHEN genre = 'comedy' THEN 'chill'
+  ELSE 'not chill'
+ END AS mood
+FROM movies; SELECT name,
+ CASE
+  WHEN imdb_rating > 7 THEN 'good'
+  WHEN imdb_rating > 5 THEN 'ok'
+  ELSE 'mmm'
+ END AS ratings
+FROM movies;" > tmp.txt
+  run diff output.txt tmp.txt
+  [ "$status" -eq 1 ]
+}
+
+@test "Type the code in the code editor using the appropriate clauses." {
+  	sqlite3 output.sqlite "SELECT name,
+ CASE
+  WHEN imdb_rating > 7 THEN 'good'
+  WHEN imdb_rating > 5 THEN 'ok'
+  ELSE 'mmm'
+ END AS ratings
+FROM movies;"  > tmp.txt
+  	run diff output.txt tmp.txt
+  	[ "$status" -eq 0 ]
+}
+
+
+
+
 
 
 
