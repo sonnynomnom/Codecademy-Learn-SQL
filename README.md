@@ -10,6 +10,18 @@ CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
 INSERT INTO albums_new(id, name, artist_id, year) VALUES (1, 'Blonde', NULL, 2016);
 INSERT INTO albums_new(id, name, artist_id, year) VALUES (2, 'Return to Love', NULL, 2016);
 INSERT INTO albums_new(id, name, artist_id, year) VALUES (3, 'Haunts EP', NULL, 2017);
+
+UPDATE albums_new
+SET id = 15
+WHERE name = 'Blonde';
+
+UPDATE albums_new
+SET id = 16
+WHERE name = 'Return to Love';
+
+UPDATE albums_new
+SET id = 17
+WHERE name = 'Haunts EP';
 ```
 
 
