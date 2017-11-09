@@ -1,5 +1,7 @@
 # CodecademySQL
 
+Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
+
 ```sql
 CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
 
