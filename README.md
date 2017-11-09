@@ -1,6 +1,8 @@
 # CodecademySQL
 
-Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
+Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
+
+Add file: `touch sqlite3 union.sqlite`
 
 ```sql
 CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
