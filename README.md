@@ -123,19 +123,104 @@ FROM movies;"  > tmp.txt
 
 CREATE TABLE nomnom(name TEXT, neighborhood TEXT, cuisine TEXT, review INTEGER, price TEXT, health TEXT);
 
+
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Peter Luger Steak House', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A');
 
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jongro BBQ', 'Midtown', 'Korean', 4.5, '$$', 'A');
 
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (222, 'Dawn of the Dead', 'horror', 1978, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (223, 'Shawn of the Dead', 'comedy', 2004, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (224, 'Star Wars: The Force Awakens', 'action', 2015, 8.1);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (225, 'Star Wars: The Last Jedi', 'action', 2017, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (226, 'The Shining', 'horror', 1985, 8.4);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (227, 'The Devil and Daniel Johnston', NULL, 2005, 8.0);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (228, 'Ali Wong: Baby Cobra', 'comedy', 2016, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (229, 'The Big Sick', 'romance', 2017, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (230, 'Deadpool', 'action', 2016, NULL);
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Pocha 32', 'Midtown', 'Korean', 4.0, '$$', 'A');
 
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nom Wah Tea Parlor', 'Chinatown', 'Chinese', 4.2, '$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roberta''s', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Speedy Romeo', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Bunna Cafe', 'Brooklyn', 'Ethiopian', 4.6, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Massawa', 'Uptown', 'Ethiopian', 4.0, '$$', NULL);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Buddha Bodai', 'Chinatown', 'Vegetarian', 4.2, '$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nan Xiang Xio Long Bao', 'Queens', 'Chinese', 4.2, '$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Mission Chinese Food', 'Downtown', 'Chinese', 3.9, '$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Baohaus', 'Downtown', 'Chinese', 4.2, '$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('al di la Trattoria', 'Brooklyn', 'Italian', 4.4, '$$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Locanda Vini & Olii', 'Brooklyn', 'Italian', 4.4, '$$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Rao''s', 'Uptown', 'Italian', 4.2, '$$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Minca', 'Downtown', 'Japanese', 4.4, '$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Kenka', 'Downtown', 'Japanese', 4.3, '$', B);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Yakitori Taisho', 'Downtown', 'Japanese', 4.1, '$', B);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Xi''an Famous Foods', 'Midtown', 'Chinese', 4.4, '$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Shake Shack', 'Midtown', 'American', 4.4, '$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Halal Guys', 'Midtown', 'Miditerranean', 4.4, '$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Foodcademy', 'Midtown', 'American', 4.4, '$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Sonnyboy''s', 'Brooklyn', 'Vegetarian', 4.2, '$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Cole Romano Experience', 'Brooklyn', 'Italian', 2.1, '$$$$$', C);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Timbo Slice', 'Brooklyn', 'Pizza', 2.8, '$', B);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Scorpio Sisters', 'Downtown', 'American', 4.2, '$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('N.E.D', 'Uptown', 'American', 4.2, '$$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Great NY Noodletown', 'Chinatown', 'Chinese', 4.1, '$$', B);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Golden Unicorn', 'Chinatown', 'Chinese', 3.8, '$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Wo Hop', 'Chinatown', 'Chinese', 4.2, '$$', NULL);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Di Fara Pizza', 'Brooklyn', 'Pizza', 4.2, '$$', A);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Kang Ho Dong Baekjeong', 'Midtown', 'Korean', 4.3, '$$$', C);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roti Roll Bombay Frankie', 'Uptown', 'Indian', 4.2, '$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jacob''s Pickles', 'Uptown', 'American', NULL, '$$', NULL);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Dan and John''s Wings', 'Downtown', 'American', 4.5, '$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Ping''s Seafood', 'Chinatown', 'Chinese', 4.2, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('XO Kitchen', 'Chinatown', 'Chinese', 4.0, '$', 'B');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Carbone', 'Downtown', 'Italian', 4.3, '$$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('I Sodi', 'Downtown', 'Italian', 4.5, '$$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Lilia', 'Brooklyn', 'Italian', 4.4, '$$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Enid''s', 'Brooklyn', 'Soul Food', 4.0, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jajaja', 'Downtown', 'Vegetarian', 4.5, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Smalls Jazz Club', 'Downtown', 'American', NULL, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Russ & Daughters', 'Downtown', 'American', 4.6, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Meatball Shop', 'Downtown', 'American', 4.2, '$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Dirt Candy', 'Downtown', 'Vegetarian', 4.4, '$$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Sushi Dojo', 'Downtown', 'Japanese', 4.1, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('St. Anselm', 'Brooklyn', 'Steak', 4.5, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Marea', 'Midtown', 'Italian', 4.5, '$$$$', 'A');
 
 
 
