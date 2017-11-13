@@ -142,7 +142,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Buddha Bodai', 'Chinatown', 'Vegetarian', 4.2, '$$', A);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nan Xiang Xio Long Bao', 'Queens', 'Chinese', 4.2, '$', A);
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nan Xiang Xiao Long Bao', 'Queens', 'Chinese', 4.2, '$', A);
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Mission Chinese Food', 'Downtown', 'Chinese', 3.9, '$$', A);
 
@@ -168,7 +168,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Foodcademy', 'Midtown', 'American', 4.4, '$$', A);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Sonnyboy''s', 'Brooklyn', 'Vegetarian', 4.2, '$$', A);
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Sonnyboy''s', 'Brooklyn', 'Chinese', 4.2, '$$', A);
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Cole Romano Experience', 'Brooklyn', 'Italian', 2.1, '$$$$$', C);
 
