@@ -222,6 +222,9 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Marea', 'Midtown', 'Italian', 4.5, '$$$$', 'A');
 
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Lighthouse', 'Brooklyn', 'American', 4.6, '$$', NULL);
+
+```
 
 
 
