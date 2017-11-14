@@ -216,7 +216,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Dirt Candy', 'Downtown', 'Vegetarian', 4.4, '$$$', 'A');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Sushi Dojo', 'Downtown', 'Japanese', 4.1, '$$', 'A');
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Ippudo', 'Downtown', 'Japanese', 4.4, '$$', 'A');
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('St. Anselm', 'Brooklyn', 'Steak', 4.5, '$$', 'A');
 
