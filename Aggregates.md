@@ -99,7 +99,7 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Brrr', 'New York', 'Gambling', 10, 5000000, 322000000, 2012, 'A', 'Solo', 'eSports Betting');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('BackPax', 'New York', 'Education', 2, 80000, 14000000, 2017, 'Seed', 'Jose Ferreira', 'MOOC's are Boo Hoo');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('BackPax', 'New York', 'Education', 2, 80000, 14000000, 2017, 'Seed', 'Jose Ferreira', 'MOOCs are Boo Hoo');
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('CapitalPunishment', 'New York', 'Mobile', 15, 500000, 10000000, 2008, 'A', 'Cole Romano', 'Stock Market Brawler Game');
 
