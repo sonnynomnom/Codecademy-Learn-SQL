@@ -77,6 +77,8 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Magic Heap', 'Fort Lauderdale', 'Augmented Reality', 500, 1800000000, 8000000000, 2013, 'D', 'Johnny Malkovich', NULL);
 
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('HoloGrail', 'San Francisco', 'Technology', 30, 51000000, 1800000000, 2016, 'B', 'Daniel Li', 'Volumetric Display');
+
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Voice2Txt', 'San Francisco', 'Mobile', 16, 1800000, 15000000, 2012, 'Seed', 'Cole Romano', 'Transcribes Voicemails to Texts');
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('V-Arrr', 'San Francisco', 'Virtual Reality', 6, 750000, 2500000, 2015, 'Seed', 'Cole Romano', 'Pirate-Themed VR App');
