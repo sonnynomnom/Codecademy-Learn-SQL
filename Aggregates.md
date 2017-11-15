@@ -151,7 +151,40 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('PostGurt', 'Savannah', 'Social', 6, 550000, 200000000, 2013, 'Seed', 'Lauretta Brieman', 'Subscription Based Yogurt in the Mail');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Kimberly', 'Brooklyn', NULL, 2, 100000, 8500000, 2018, 'Seed', 'Jillian Kuzmin', 'Synthetic Diamonds');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Virtual Tour', 'Chicago', 'E-commerce', 12, 750000, 120000000, 2014, 'Seed', 'Ari L''Boy', 'Real Estate for Fake People');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Eärendil', 'Los Angeles', 'Mobile', 2, 50000, 200000, 2009, 'Seed', 'Kent Bergensen', 'Flashlight App');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('QT', 'Los Angeles', 'Social', 3, 1500000, 4500000, 2018, 'Seed', 'Keiko', 'Who Can Be More Kawaii (づ｡◕‿‿◕｡)づ');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('LiftHub', 'Los Angeles', 'Fitness', 30, 2350000, 15000000, 2015, 'A', 'Mike McManus', 'Eat Clean. Train Dirty.');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Napflix', 'Los Angeles', 'Mobile', 1, NULL, NULL, 2016, 'Stealth', 'Reed Samson', 'Bootleg Netflix Shows');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('CyShare', 'Seattle', 'Social', 11, 300000, 10000000, 2015, 'B', 'Cathy Zhou', 'Bicycle Sharing Service');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('FizzyWillow', 'Seattle', 'Social', 6, 2000000, 120000000, 2014, 'C', 'Sandra Emmerson', 'Sparkling Wine Review App');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Q Green', 'Seattle', 'Nanotechnology', 12, 3600000, 150000000, 2013, 'A', 'Quan Li', NULL);
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Friend, Where Is My Vehicle', 'Washington DC', 'Saas', 8, 1800000, 2000000, 2016, 'A', 'Roland Tavurner', 'GPS Services');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
