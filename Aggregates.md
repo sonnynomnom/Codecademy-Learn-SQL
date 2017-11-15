@@ -75,7 +75,7 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Fakeblock', 'Irvine', 'Mobile', 2, 3, NULL, 2013, 'Seed', 'George Michael', 'OC''s Most Popular Digital Wood Instrument');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Magic Heap', 'Fort Lauderdale', 'Augmented Reality', 500, 1800000000, 8000000000, 2013, 'D', 'Johnny Malkovich', NULL);
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Magic Heap', 'Fort Lauderdale', 'Augmented Reality', 500, 1800000000, 8000000000, 2013, 'D', 'Johnny Malkovich', '¯\_(ツ)_/¯');
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('HoloGrail', 'San Francisco', 'Technology', 30, 51000000, 1800000000, 2016, 'B', 'Daniel Li', 'Volumetric Display');
 
@@ -115,6 +115,11 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Codefellas', 'New York', 'Education', 50, 50000000, 10000000000, 2012, 'A', 'Zane Sims', 'The Not So Easy Way to Learn to Code');
 
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('kryptoPark', 'Palo Alto', 'Security', 70, 75000000, 10000000000, 2011, 'B', 'Joe Wang', 'Password Mgmt for Password Mgmt Services');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('zZz', 'Palo Alto', 'SaaS', 20, 50000000, 800000000, 2008, 'C', 'Henry Campbell', 'Dream Tracking/Recording');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Pita Pan', 'Palo Alto', 'Technology', 40, 30000000, 5500000000, 2015, 'B', NULL, 'Drone Food Delivery Service');
 
 
 
