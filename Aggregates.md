@@ -28,7 +28,8 @@ INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (221, 'The Good, t
 
 ```
 
-./upload workspaces/sql_unit_2 --type:sql
+
+`./upload workspaces/sql_unit_3 --type:sql`
 
 ```sql
 UPDATE movies
