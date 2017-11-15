@@ -167,7 +167,7 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Q Green', 'Seattle', 'Nanotechnology', 12, 3600000, 150000000, 2013, 'A', 'Quan Li', NULL);
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Friend, Where Is My Vehicle', 'Washington DC', 'Saas', 8, 1800000, 2000000, 2016, 'A', 'Roland Tavurner', 'GPS Services');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Friend, Where Is My Vehicle', 'Washington DC', 'SaaS', 8, 1800000, 2000000, 2016, 'A', 'Roland Tavurner', 'GPS Services');
 
 
 
