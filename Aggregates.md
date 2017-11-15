@@ -75,9 +75,46 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Fakeblock', 'Irvine', 'Mobile', 2, 3, NULL, 2013, 'Seed', 'George Michael', 'OC''s Most Popular Digital Wood Instrument');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Magic Heap', 'Fort Lauderdale', 'Augmented Reality', 500, 1800000000, 8000000000, 2013, 'D', 'Johnny Malkovich', 'Virtual Retinal Display');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Magic Heap', 'Fort Lauderdale', 'Augmented Reality', 500, 1800000000, 8000000000, 2013, 'D', 'Johnny Malkovich', NULL);
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('HoloGrail', 'San Francisco', 'Technology', 30, 51000000, 1800000000, 2016, 'B', 'Hezekiah Wood', 'Hologram Video Chat');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Voice2Txt', 'San Francisco', 'Mobile', 16, 1800000, 15000000, 2012, 'Seed', 'Cole Romano', 'Transcribes Voicemails to Texts');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('V-Arrr', 'San Francisco', 'Virtual Reality', 6, 750000, 2500000, 2015, 'Seed', 'Cole Romano', 'Pirate-Themed VR App');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('REBU', 'San Francisco', 'Logisctics', 15000, 11500000000, 70000000, 2009, 'G', 'Kravis Talanick', 'Ridesharing Platform');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Rave New World', 'San Francisco', 'Social', 8, 250000, 6000000, 2014, NULL, 'Sam Guss', 'Social Media for the EDM Community');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('WaterCnC', 'San Francisco', 'Travel', 4000, 4400000000, 25000000000, 2008, 'F', 'Crian Besky', 'Water Sharing Platform for Cooks and Chefs');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('RankerBot', 'San Francisco', 'Algorithms', 5, 1500000, 7600000, 2013, 'Acquired', 'Delaney', 'Water Sharing Platform for Cooks and Chefs');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Xandesk', 'San Francisco', 'Customer Service', 100, 75500000, 640000000, 2012, 'IPO', 'Ronald Paris', 'Keep Frowning');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('StarsNGripes', 'Boulder', 'Social', 3, 2000000, 560000000, 2015, 'A', 'Gregory Hilt', 'Yelp for US Landmarks and Tourist Attractions');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('SoCorny', 'Omaha', 'Technology', 65, 25000000, 2000000000, 2013, 'B', 'Elon Tusk', 'Analytics Platform for Corn Production');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('VeVork', 'New York', 'Real Estate', 200, 750000000, 20000000000, 2010, 'G', 'Mada Nammneu', 'Co-relaxing Space for Vampires');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Brrr', 'New York', 'Gambling', 10, 5000000, 322000000, 2012, 'A', 'Solo', 'eSports Betting');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('BackPax', 'New York', 'Education', 2, 80000, 14000000, 2017, 'Seed', 'Jose Ferreira', 'MOOC's are Boo Hoo');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('CapitalPunishment', 'New York', 'Mobile', 15, 500000, 10000000, 2008, 'A', 'Cole Romano', 'Stock Market Brawler Game');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Son of a Fletch', 'New York', 'Social', 4, 300000, 3000000, 2014, 'Seed', 'CC Vaught', 'Social Media App for Archery Enthusiasts');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Yas Queen', 'New York', 'Health Care', 300, 45000000, 980000000, 2015, 'A', 'Jamie Brieman', 'Accelerating Breast Cancer Research');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Geocities-Lite', 'New York', 'Social', 20, 1000000, 50000000, 2012, 'A', 'Jim Jason', 'Mobile Friendly Geocities');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Cluster.ly', 'New York', 'Big Data Analytics', 10, 750000, 15000000, 2015, 'B', 'Hillary Green', NULL);
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Codefellas', 'New York', 'Education', 50, 50000000, 10000000000, 2012, 'A', 'Zane Sims', 'The Not So Easy Way to Learn to Code');
+
+
+
 
 
 
