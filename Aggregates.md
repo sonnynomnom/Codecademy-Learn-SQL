@@ -85,7 +85,7 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('V-Arrr', 'San Francisco', 'Virtual Reality', 6, 750000, 2500000, 2015, 'Seed', 'Cole Romano', 'Pirate-Themed VR App');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('REBU', 'San Francisco', 'Logisctics', 15000, 11500000000, 70000000, 2009, 'G', 'Kravis Talanick', 'Ridesharing Platform');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('REBU', 'San Francisco', 'Logistics', 15000, 11500000000, 70000000, 2009, 'G', 'Kravis Talanick', 'Ridesharing Platform');
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Rave New World', 'San Francisco', 'Social', 8, 250000, 6000000, 2014, NULL, 'Sam Guss', 'Social Media for the EDM Community');
 
