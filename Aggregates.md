@@ -1,6 +1,6 @@
 # CodecademySQL
 
-`./upload workspaces/sql_unit_4 --type:sql`
+`./upload workspaces/sql_unit_3 --type:sql`
 
 ```sql
 CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
@@ -42,6 +42,8 @@ WHERE name = 'Ali Wong: Baby Cobra';
 ```sql
 
 CREATE TABLE startups(name TEXT, location TEXT, category TEXT, employees INTEGER, raised INTEGER, valuation INTEGER, founded INTEGER, stage TEXT, ceo TEXT, info TEXT);
+
+DROP TABLE startups;
 
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Pied Piper', 'Silicon Valley', 'Cloud Computing', 6, 5000000, 50000000, 2014, 'A', 'Richard Hendricks', 'A Middle-Out Compression Solution');
