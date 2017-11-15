@@ -25,15 +25,7 @@ WHERE name = 'Haunts EP';
 
 ```sql
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (221, 'The Good, the Bad and the Ugly', NULL, NULL, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (222, 'Dawn of the Dead', 'horror', 1978, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (223, 'Shawn of the Dead', 'comedy', 2004, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (224, 'Star Wars: The Force Awakens', 'action', 2015, 8.1);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (225, 'Star Wars: The Last Jedi', 'action', 2017, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (226, 'The Shining', 'horror', 1985, 8.4);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (227, 'The Devil and Daniel Johnston', NULL, 2005, 8.0);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (228, 'Ali Wong: Baby Cobra', 'comedy', 2016, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (229, 'The Big Sick', 'romance', 2017, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (230, 'Deadpool', 'action', 2016, NULL);
+
 ```
 
 ./upload workspaces/sql_unit_2 --type:sql
@@ -45,92 +37,34 @@ WHERE name = 'Ali Wong: Baby Cobra';
 ```
 
 
-
-# Queries
-
-## 14. Case
-
-**Checkpoint 2**
-
-Following this format, edit the previous query and create our very own rating system:
-
-- IMDb ratings above 7 is 'good'
-- IMDb ratings above 5 is 'ok'
-- everything else is 'mmm'
-
-Finish the `CASE` by renaming it with an alias of your choosing.
-
-**Hint:**
-
-```sql
-SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS whatever
-FROM movies;
-```
-
-The result should have two columns.
-
-**Tests.activeBatsTest('test2.bats', callback);**
-
-@test "The query didn't return any results." {
-    touch empty.txt
-    run diff output.txt empty.txt
-    [ "$status" -eq 1 ]
-}
-
-@test "Remove the previous query." {
-	sqlite3 output.sqlite "SELECT name,
- CASE
-  WHEN genre = 'romance' THEN 'chill'
-  WHEN genre = 'comedy' THEN 'chill'
-  ELSE 'not chill'
- END AS mood
-FROM movies; SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS ratings
-FROM movies;" > tmp.txt
-  run diff output.txt tmp.txt
-  [ "$status" -eq 1 ]
-}
-
-@test "Type the code in the code editor using the appropriate clauses." {
-  	sqlite3 output.sqlite "SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS ratings
-FROM movies;"  > tmp.txt
-  	run diff output.txt tmp.txt
-  	[ "$status" -eq 0 ]
-}
-
-
 ## Project
 
 ```sql
 
-CREATE TABLE nomnom(name TEXT, neighborhood TEXT, cuisine TEXT, review INTEGER, price TEXT, health TEXT);
+CREATE TABLE startups(name TEXT, location TEXT, category TEXT, employees INTEGER, raised INTEGER, valuation INTEGER, founded INTEGER, stage TEXT, ceo TEXT, info TEXT);
 
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Peter Luger Steak House', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Pied Piper', 'Silicon Valley', 'Cloud Computing', 6, 5000000, 50000000, 2014, 'A', 'Richard Hendricks', 'Middle-out Compression');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jongro BBQ', 'Midtown', 'Korean', 4.5, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Hooli', 'Silicon Valley', 'Enterprise', 92013000, 580000000, 49500000000, 1997, NULL, 'Gavin Bensen', 'MAKING THE WORLD A BETTER PLACE');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Pocha 32', 'Midtown', 'Korean', 4.0, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Raviga Capital Management', 'Silicon Valley', 'Venture Capital', 12, 300000000, 3000000000, 2012, NULL, 'Peter Gregory', 'We See the Big Picture');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nom Wah Tea Parlor', 'Chinatown', 'Chinese', 4.2, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Aviato', 'Silicon Valley', 'Travel', 3, 250000, 2500000, 2006, 'Acquired', 'Erlich Bachman', 'Software Aggregation Program');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roberta''s', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('SEEFOOD', 'Silicon Valley', 'Mobile', 2, NULL, 15000000, 2016, 'Acquired', 'Jian Yang', 'The Shazam of Food');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Speedy Romeo', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Forbid', 'New York', 'Mobile', 25, 1400000, 5000000, 2013, 'Acquired', 'Charlie Dattolo', 'Charge Users $10 for Calling Their Ex');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Soulstice', 'New York', 'Fitness', 300, 30000000, 120000000, 2014, 'B', NULL, NULL);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('E-Corp', 'New York', 'Enterprise', 10000, NULL, 66000000000, 2006, NULL, 'Phillip Price', 'Together We Can Change the Wolrd');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Allsafe Cybersecurity', 'New York', 'Security', 250, 123000000, 1000000000, 2014, NULL, 'Gideon Goddard', NULL);
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('fsociety', 'Brooklyn', 'Games', 5, NULL, NULL, 2015, 'Stealth', 'Elliot Alderson', 'Fun Society Arcade');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Sum', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Bunna Cafe', 'Brooklyn', 'Ethiopian', 4.6, '$$', 'A');
 
