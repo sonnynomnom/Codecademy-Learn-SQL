@@ -22,7 +22,7 @@ CREATE TABLE trips(id INTEGER PRIMARY KEY, date TEXT, pickup_time TEXT, pickup_l
 
 CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, location TEXT, rating INTEGER, referred INTEGER, first_trip_id INTEGER, last_trip_id INTEGER, total_trips INTEGER, signup_timestamp1 TEXT, timestamp1 TEXT);
 
-CREATE TABLE self_driving_cars(id INTEGER PRIMARY KEY, first TEXT, last TEXT, name TEXT, rating INTEGER, trips_completed INTEGER);
+CREATE TABLE self_driving_cars(id INTEGER PRIMARY KEY, model TEXT, OS TEXT, engineer TEXT, status TEXT, trips_completed INTEGER);
 
 ...
 
