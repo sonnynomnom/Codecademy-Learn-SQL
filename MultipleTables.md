@@ -40,11 +40,11 @@ INSERT INTO riders(id, first, last, username, location, rating, referred, last_t
 
 ...
 
-INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trip_completed) VALUES (1, 'Ada001', 'Finux', 23, 'active', 45);
+INSERT INTO self_driving_cars(id, model, OS, engineer, status, trip_completed) VALUES (1, 'Ada001', 'Finux', 23, 'active', 45);
 
-INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trip_completed) VALUES (1, 'Ada002', 'Finux', 23, 'active', 30);
+INSERT INTO self_driving_cars(id, model, OS, engineer, status, trip_completed) VALUES (1, 'Ada002', 'Finux', 23, 'active', 30);
 
-INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trip_completed) VALUES (1, 'Edsger', 'iApollo', 123, 'active', 154);
+INSERT INTO self_driving_cars(id, model, OS, engineer, status, trip_completed) VALUES (1, 'Edsger', 'iApollo', 123, 'active', 154);
 
 
 ```
