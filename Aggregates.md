@@ -97,6 +97,11 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Everyday.me', 'San Francisco', 'Mobile', 35, NULL, NULL, 2012, 'Seed', 'Yu-Kuan Lin', 'Journal that Captures the Special Moments');
 
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Backsby', 'San Francisco', NULL, NULL, NULL, NULL, 2013, 'Seed', 'Oliver Plattner', NULL);
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Smart Host', 'Brooklyn', 'Data Analytics', 4, 380000, NULL, 2014, 'Acquired', 'Evan Hammer', 'Dynamic Pricing for Vacation Rentals');
+
+
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('StarsNGripes', 'Boulder', 'Social', 3, 2000000, 560000000, 2015, 'A', 'Gregory Hilt', 'Yelp for US Landmarks and Tourist Attractions');
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('SoCorny', 'Omaha', 'Technology', 65, 25000000, 2000000000, 2013, 'B', 'Elon Tusk', 'Analytics Platform for Corn Production');
@@ -168,6 +173,30 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Q Green', 'Seattle', 'Nanotechnology', 12, 3600000, 150000000, 2013, 'A', 'Quan Li', NULL);
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Friend, Where Is My Vehicle', 'Washington DC', 'SaaS', 8, 1800000, 2000000, 2016, 'A', 'Roland Tavurner', 'GPS Services');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Allniter', 'New Delhi', 'Education', 250, 1000000, 15000000, 2009, 'A', 'Rohan Taneja', 'Homework/Essay Help');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Gnome Reverser', 'Denver', 'Mobile', 10, 1500000, 10000000, 2014, 'A', 'Bruce Dzeda', 'Location Service to Find Your Keys/Wallet');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('ScoopAble', 'Denver', 'Social', 14, 1000000, 7600000, 2016, 'Seed', 'Zoe Gfell', 'Yogurt Finder');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('YoBert', 'New York', 'Education', 31, 800000, 40000000, 2016, 'Acquired', 'Ernie Dzeda', 'Seasme Street Themed Educational App');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Trufflez', 'New York', 'Food', 23, 1000000, 12000000, 2014, 'Seed', NULL, 'AI Suggests Recipes Based on Photos');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Unfade', 'New York', 'Fashion', 4, 5000000, 560000000, 2016, 'A', 'Peggy Grimes', 'Everything Hair');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('OrangeYouLonely', 'Minneapolis', 'Social', 20, 1200000, 14000000, 2012, 'Seed', 'Gus Dawson', 'Dating App for Farmers');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('WellDeserved', 'San Francisco', 'E-commerce', 4, NULL, NULL, 2015, 'Seed', 'Kasima Tharnpipitchai', 'The Premiere Marketplace for Privilege');
+
+
+
+
+
+
+
+
 
 
 
