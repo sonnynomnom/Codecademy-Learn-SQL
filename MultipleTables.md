@@ -6,219 +6,46 @@
 CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
 
 INSERT INTO albums_new(id, name, artist_id, year) VALUES (1, 'Blonde', NULL, 2016);
-INSERT INTO albums_new(id, name, artist_id, year) VALUES (2, 'Return to Love', NULL, 2016);
-INSERT INTO albums_new(id, name, artist_id, year) VALUES (3, 'Haunts EP', NULL, 2017);
 
 UPDATE albums_new
 SET id = 15
 WHERE name = 'Blonde';
 
-UPDATE albums_new
-SET id = 16
-WHERE name = 'Return to Love';
-
-UPDATE albums_new
-SET id = 17
-WHERE name = 'Haunts EP';
 ```
-
-
-```sql
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (221, 'The Good, the Bad and the Ugly', NULL, NULL, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (222, 'Dawn of the Dead', 'horror', 1978, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (223, 'Shawn of the Dead', 'comedy', 2004, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (224, 'Star Wars: The Force Awakens', 'action', 2015, 8.1);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (225, 'Star Wars: The Last Jedi', 'action', 2017, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (226, 'The Shining', 'horror', 1985, 8.4);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (227, 'The Devil and Daniel Johnston', NULL, 2005, 8.0);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (228, 'Ali Wong: Baby Cobra', 'comedy', 2016, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (229, 'The Big Sick', 'romance', 2017, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (230, 'Deadpool', 'action', 2016, NULL);
-```
-
-./upload workspaces/sql_unit_2 --type:sql
-
-```sql
-UPDATE movies
-SET genre = NULL
-WHERE name = 'Ali Wong: Baby Cobra';
-```
-
-
-
-# Queries
-
-## 14. Case
-
-**Checkpoint 2**
-
-Following this format, edit the previous query and create our very own rating system:
-
-- IMDb ratings above 7 is 'good'
-- IMDb ratings above 5 is 'ok'
-- everything else is 'mmm'
-
-Finish the `CASE` by renaming it with an alias of your choosing.
-
-**Hint:**
-
-```sql
-SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS whatever
-FROM movies;
-```
-
-The result should have two columns.
-
-**Tests.activeBatsTest('test2.bats', callback);**
-
-@test "The query didn't return any results." {
-    touch empty.txt
-    run diff output.txt empty.txt
-    [ "$status" -eq 1 ]
-}
-
-@test "Remove the previous query." {
-	sqlite3 output.sqlite "SELECT name,
- CASE
-  WHEN genre = 'romance' THEN 'chill'
-  WHEN genre = 'comedy' THEN 'chill'
-  ELSE 'not chill'
- END AS mood
-FROM movies; SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS ratings
-FROM movies;" > tmp.txt
-  run diff output.txt tmp.txt
-  [ "$status" -eq 1 ]
-}
-
-@test "Type the code in the code editor using the appropriate clauses." {
-  	sqlite3 output.sqlite "SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS ratings
-FROM movies;"  > tmp.txt
-  	run diff output.txt tmp.txt
-  	[ "$status" -eq 0 ]
-}
 
 
 ## Project
 
 ```sql
 
-CREATE TABLE nomnom(name TEXT, neighborhood TEXT, cuisine TEXT, review INTEGER, price TEXT, health TEXT);
+CREATE TABLE trips(id INTEGER, date TEXT, pickup_time TEXT, pickup_long TEXT, pickup_lat TEXT, dropoff_time TEXT, dropoff_long TEXT, dropoff_lat TEXT, customer_id INTEGER, driver_id INTEGER, type TEXT, cost INTEGER, tip INTEGER);
 
+CREATE TABLE riders(id INTEGER, first TEXT, last TEXT, username TEXT, location TEXT, rating INTEGER, referred INTEGER, first_trip_id INTEGER, last_trip_id INTEGER, total_trips INTEGER, signup_timestamp1 TEXT, timestamp1 TEXT);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Peter Luger Steak House', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A');
+CREATE TABLE self_driving_cars(id INTEGER, first TEXT, last TEXT, name TEXT, rating INTEGER, trips_completed INTEGER);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jongro BBQ', 'Midtown', 'Korean', 4.5, '$$', 'A');
+...
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Pocha 32', 'Midtown', 'Korean', 4.0, '$$', 'A');
+INSERT INTO trips(id, date, pickup_time, pickup_long, pickup_lat, dropoff_time, dropoff_long, dropoff_lat, customer_id, driver_id, type, cost, tip) VALUES (4927, '2017-12-05', '8:00 AM', '40.6413 N', '73.7781 W', '8:15 AM', '40.6413 N', '73.7781 W', 2, 1, 'X', 10.00, 2.00);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nom Wah Tea Parlor', 'Chinatown', 'Chinese', 4.2, '$', 'A');
+INSERT INTO trips(id, date, pickup_time, pickup_long, pickup_lat, dropoff_time, dropoff_long, dropoff_lat, customer_id, driver_id, type, cost, tip) VALUES (4928, '2017-12-05', '8:10 AM', '41.6413 N', '79.1254 W', '8:35 AM', '41.6413 N', '72.7781 W', 3, 3, 'POOL', 32.00, 0.00);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roberta''s', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+INSERT INTO trips(id, date, pickup_time, pickup_long, pickup_lat, dropoff_time, dropoff_long, dropoff_lat, customer_id, driver_id, type, cost, tip) VALUES (4929, '2017-12-06', '7:45 AM', '42.6413 N', '72.7781 W', '9:01 AM', '42.6413 N', '79.1254 W', 4, 4, 'X', 65.00, 3.00);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Speedy Romeo', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+...
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Bunna Cafe', 'Brooklyn', 'Ethiopian', 4.6, '$$', 'A');
+INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (101, 'Sonny', 'Li', '@sonnynomnom', 'bushwick', 4.66, NULL, 4444, 923);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Massawa', 'Uptown', 'Ethiopian', 4.0, '$$', NULL);
+INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (106, 'Chris', 'Christie', '@chrischristie', 'jersey', 2.32, NULL, 2331, 64);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Buddha Bodai', 'Chinatown', 'Vegetarian', 4.2, '$$', 'A');
+...
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nan Xiang Xiao Long Bao', 'Queens', 'Chinese', 4.2, '$', 'A');
+INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trip_completed) VALUES (1, 'Ada001', 'Finux', 23, 'active', 45);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Mission Chinese Food', 'Downtown', 'Chinese', 3.9, '$$', 'A');
+INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trip_completed) VALUES (1, 'Ada002', 'Finux', 23, 'active', 30);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Baohaus', 'Downtown', 'Chinese', 4.2, '$', 'A');
+INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trip_completed) VALUES (1, 'Edsger', 'iApollo', 123, 'active', 154);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('al di la Trattoria', 'Brooklyn', 'Italian', 4.4, '$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Locanda Vini & Olii', 'Brooklyn', 'Italian', 4.4, '$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Rao''s', 'Uptown', 'Italian', 4.2, '$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Minca', 'Downtown', 'Japanese', 4.4, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Kenka', 'Downtown', 'Japanese', 4.3, '$', 'B');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Yakitori Taisho', 'Downtown', 'Japanese', 4.1, '$', 'B');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Xi''an Famous Foods', 'Midtown', 'Chinese', 4.4, '$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Shake Shack', 'Midtown', 'American', 4.4, '$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Halal Guys', 'Midtown', 'Mediterranean', 4.4, '$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Foodcademy', 'Midtown', 'American', 4.4, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Sonnyboy''s', 'Brooklyn', 'Chinese', 4.2, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Cole Romano Experience', 'Brooklyn', 'Italian', 2.1, '$$$$$', 'C');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Timbo Slice', 'Brooklyn', 'Pizza', 2.8, '$', 'B');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Scorpio Sisters', 'Downtown', 'American', 4.2, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('N.E.D', 'Uptown', 'American', 4.2, '$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Great NY Noodletown', 'Chinatown', 'Chinese', 4.1, '$$', 'B');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Golden Unicorn', 'Chinatown', 'Chinese', 3.8, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Wo Hop', 'Chinatown', 'Chinese', 4.2, '$$', NULL);
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Di Fara Pizza', 'Brooklyn', 'Pizza', 4.2, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Kang Ho Dong Baekjeong', 'Midtown', 'Korean', 4.3, '$$$', 'C');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roti Roll Bombay Frankie', 'Uptown', 'Indian', 4.2, '$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jacob''s Pickles', 'Uptown', 'American', NULL, '$$', NULL);
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Dan and John''s Wings', 'Downtown', 'American', 4.5, '$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Ping''s Seafood', 'Chinatown', 'Chinese', 4.2, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('XO Kitchen', 'Chinatown', 'Chinese', 4.0, '$', 'B');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Carbone', 'Downtown', 'Italian', 4.3, '$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('I Sodi', 'Downtown', 'Italian', 4.5, '$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Lilia', 'Brooklyn', 'Italian', 4.4, '$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Enid''s', 'Brooklyn', 'Soul Food', 4.0, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jajaja', 'Downtown', 'Vegetarian', 4.5, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Smalls Jazz Club', 'Downtown', 'American', NULL, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Russ & Daughters', 'Downtown', 'American', 4.6, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Meatball Shop', 'Downtown', 'American', 4.2, '$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Dirt Candy', 'Downtown', 'Vegetarian', 4.4, '$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Ippudo', 'Downtown', 'Japanese', 4.4, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('St. Anselm', 'Brooklyn', 'Steak', 4.5, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Marea', 'Midtown', 'Italian', 4.5, '$$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Lighthouse', 'Brooklyn', 'American', 4.6, '$$', NULL);
 
 ```
 
