@@ -18,11 +18,11 @@ WHERE name = 'Blonde';
 
 ```sql
 
-CREATE TABLE trips(id INTEGER, date TEXT, pickup_time TEXT, pickup_long TEXT, pickup_lat TEXT, dropoff_time TEXT, dropoff_long TEXT, dropoff_lat TEXT, customer_id INTEGER, driver_id INTEGER, type TEXT, cost INTEGER, tip INTEGER);
+CREATE TABLE trips(id PRIMARY KEY INTEGER, date TEXT, pickup_time TEXT, pickup_long TEXT, pickup_lat TEXT, dropoff_time TEXT, dropoff_long TEXT, dropoff_lat TEXT, customer_id INTEGER, driver_id INTEGER, type TEXT, cost INTEGER, tip INTEGER);
 
-CREATE TABLE riders(id INTEGER, first TEXT, last TEXT, username TEXT, location TEXT, rating INTEGER, referred INTEGER, first_trip_id INTEGER, last_trip_id INTEGER, total_trips INTEGER, signup_timestamp1 TEXT, timestamp1 TEXT);
+CREATE TABLE riders(id PRIMARY KEY INTEGER, first TEXT, last TEXT, username TEXT, location TEXT, rating INTEGER, referred INTEGER, first_trip_id INTEGER, last_trip_id INTEGER, total_trips INTEGER, signup_timestamp1 TEXT, timestamp1 TEXT);
 
-CREATE TABLE self_driving_cars(id INTEGER, first TEXT, last TEXT, name TEXT, rating INTEGER, trips_completed INTEGER);
+CREATE TABLE self_driving_cars(id PRIMARY KEY INTEGER, first TEXT, last TEXT, name TEXT, rating INTEGER, trips_completed INTEGER);
 
 ...
 
