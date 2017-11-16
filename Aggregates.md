@@ -120,7 +120,7 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Geocities-Lite', 'New York', 'Social', 20, 1000000, 50000000, 2012, 'A', 'Jim Jason', 'Mobile Friendly Geocities');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Cluster.ly', 'New York', 'Big Data Analytics', 10, 750000, 15000000, 2015, 'B', 'Hillary Green', NULL);
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Cluster.ly', 'New York', 'Data Analytics', 10, 750000, 15000000, 2015, 'B', 'Hillary Green', NULL);
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Codefellas', 'New York', 'Education', 50, 50000000, 10000000000, 2012, 'A', 'Zane Sims', 'The Not So Easy Way to Learn to Code');
 
@@ -146,9 +146,9 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('RICE Media', 'Brooklyn', 'Video Streaming', 3000, 730000000, NULL, 1994, NULL, 'Shayna Craftsman', '2cool4school');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Townie666', 'Brooklyn', NULL, 2, 20000, 80000, 2017, 'Seed', 'Sonny Li', '*_*');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Townie666', 'Brooklyn', 'E-commerce', 2, 20000, 80000, 2017, 'Seed', 'Sonny Li', '*_*');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Kimberly', 'Brooklyn', NULL, 2, 100000, 8500000, 2018, 'Seed', 'Jillian Kuzmin', 'Synthetic Diamonds');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Kimberly', 'Brooklyn', 'E-commerce', 2, 100000, 8500000, 2018, 'Seed', 'Jillian Kuzmin', 'Synthetic Diamonds');
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Wakeful', 'Brooklyn', 'Virtual Reality', 3, 30000, 1800000, 2016, 'Seed', 'Maria Epstein', 'Meditation VR App');
 
