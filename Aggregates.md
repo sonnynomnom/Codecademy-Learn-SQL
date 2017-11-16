@@ -182,9 +182,9 @@ INSERT INTO startups(name, location, category, employees, raised, valuation, fou
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('YoBert', 'New York', 'Education', 31, 800000, 40000000, 2016, 'Acquired', 'Ernie Dzeda', 'Seasme Street Themed Educational App');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Trufflez', 'New York', 'Food', 23, 1000000, 12000000, 2014, 'Seed', NULL, 'AI Suggests Recipes Based on Photos');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Trufflez', 'New York', 'Mobile', 23, 1000000, 12000000, 2014, 'Seed', NULL, 'AI Suggests Recipes Based on Photos');
 
-INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Unfade', 'New York', 'Fashion', 4, 5000000, 560000000, 2016, 'A', 'Peggy Grimes', 'Everything Hair');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Unfade', 'New York', 'Fashion', 4, 400000, 5600000, 2016, 'A', 'Peggy Grimes', 'Everything Hair');
 
 INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('OrangeYouLonely', 'Minneapolis', 'Social', 20, 1200000, 14000000, 2012, 'Seed', 'Gus Dawson', 'Dating App for Farmers');
 
