@@ -1,6 +1,6 @@
 # CodecademySQL
 
-`./upload workspaces/sql_unit_4 --type:sql`
+`./upload workspaces/sql_unit_3 --type:sql`
 
 ```sql
 CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
@@ -25,18 +25,11 @@ WHERE name = 'Haunts EP';
 
 ```sql
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (221, 'The Good, the Bad and the Ugly', NULL, NULL, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (222, 'Dawn of the Dead', 'horror', 1978, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (223, 'Shawn of the Dead', 'comedy', 2004, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (224, 'Star Wars: The Force Awakens', 'action', 2015, 8.1);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (225, 'Star Wars: The Last Jedi', 'action', 2017, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (226, 'The Shining', 'horror', 1985, 8.4);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (227, 'The Devil and Daniel Johnston', NULL, 2005, 8.0);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (228, 'Ali Wong: Baby Cobra', 'comedy', 2016, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (229, 'The Big Sick', 'romance', 2017, NULL);
-INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (230, 'Deadpool', 'action', 2016, NULL);
+
 ```
 
-./upload workspaces/sql_unit_2 --type:sql
+
+`./upload workspaces/sql_unit_3 --type:sql`
 
 ```sql
 UPDATE movies
@@ -45,466 +38,184 @@ WHERE name = 'Ali Wong: Baby Cobra';
 ```
 
 
-
-# Queries
-
-## 14. Case
-
-**Checkpoint 2**
-
-Following this format, edit the previous query and create our very own rating system:
-
-- IMDb ratings above 7 is 'good'
-- IMDb ratings above 5 is 'ok'
-- everything else is 'mmm'
-
-Finish the `CASE` by renaming it with an alias of your choosing.
-
-**Hint:**
-
-```sql
-SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS whatever
-FROM movies;
-```
-
-The result should have two columns.
-
-**Tests.activeBatsTest('test2.bats', callback);**
-
-@test "The query didn't return any results." {
-    touch empty.txt
-    run diff output.txt empty.txt
-    [ "$status" -eq 1 ]
-}
-
-@test "Remove the previous query." {
-	sqlite3 output.sqlite "SELECT name,
- CASE
-  WHEN genre = 'romance' THEN 'chill'
-  WHEN genre = 'comedy' THEN 'chill'
-  ELSE 'not chill'
- END AS mood
-FROM movies; SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS ratings
-FROM movies;" > tmp.txt
-  run diff output.txt tmp.txt
-  [ "$status" -eq 1 ]
-}
-
-@test "Type the code in the code editor using the appropriate clauses." {
-  	sqlite3 output.sqlite "SELECT name,
- CASE
-  WHEN imdb_rating > 7 THEN 'good'
-  WHEN imdb_rating > 5 THEN 'ok'
-  ELSE 'mmm'
- END AS ratings
-FROM movies;"  > tmp.txt
-  	run diff output.txt tmp.txt
-  	[ "$status" -eq 0 ]
-}
-
-
 ## Project
 
 ```sql
 
-CREATE TABLE nomnom(name TEXT, neighborhood TEXT, cuisine TEXT, review INTEGER, price TEXT, health TEXT);
+CREATE TABLE startups(name TEXT, location TEXT, category TEXT, employees INTEGER, raised INTEGER, valuation INTEGER, founded INTEGER, stage TEXT, ceo TEXT, info TEXT);
+
+DROP TABLE startups;
 
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Peter Luger Steak House', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jongro BBQ', 'Midtown', 'Korean', 4.5, '$$', 'A');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Pocha 32', 'Midtown', 'Korean', 4.0, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Pied Piper', 'Silicon Valley', 'Cloud Computing', 6, 5000000, 50000000, 2014, 'A', 'Richard Hendricks', 'A Middle-Out Compression Solution');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nom Wah Tea Parlor', 'Chinatown', 'Chinese', 4.2, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Hooli', 'Silicon Valley', 'Enterprise', 9000, 580000000, 49500000000, 1997, NULL, 'Gavin Bensen', 'Hooli Is About People');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roberta''s', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Raviga Capital', 'Silicon Valley', 'Venture Capital', 12, 300000000, 3000000000, 2012, NULL, 'Peter Gregory', 'Share Only In Success');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Speedy Romeo', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Aviato', 'Silicon Valley', 'Travel', 3, 250000, 2500000, 2006, 'Acquired', 'Erlich Bachman', 'Software Aggregation Program');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Bunna Cafe', 'Brooklyn', 'Ethiopian', 4.6, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('SEE FOOD', 'Silicon Valley', 'Mobile', 2, NULL, 15000000, 2016, 'Acquired', 'Jian-Yang', 'The Shazam of Food');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Massawa', 'Uptown', 'Ethiopian', 4.0, '$$', NULL);
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Forbid', 'New York', 'Mobile', 25, 1400000, 5000000, 2013, 'Acquired', 'Charlie Dattolo', 'Charge Users $10 for Calling Their Ex');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Buddha Bodai', 'Chinatown', 'Vegetarian', 4.2, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Soulstice', 'New York', 'Fitness', 300, 30000000, 120000000, 2014, 'B', NULL, 'What are your goals today?');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nan Xiang Xiao Long Bao', 'Queens', 'Chinese', 4.2, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('E-Corp', 'New York', 'Enterprise', 10000, NULL, 66000000000, 2006, NULL, 'Phillip Price', 'Together We Can Change the Wolrd');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Mission Chinese Food', 'Downtown', 'Chinese', 3.9, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Allsafe Cybersecurity', 'New York', 'Security', 250, 123000000, 1000000000, 2014, NULL, 'Gideon Goddard', NULL);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Baohaus', 'Downtown', 'Chinese', 4.2, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('fsociety', 'Brooklyn', 'Games', 5, NULL, NULL, 2015, 'Stealth', 'Elliot Alderson', 'Fun Society Arcade');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('al di la Trattoria', 'Brooklyn', 'Italian', 4.4, '$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Summit Ice', 'Los Angeles', 'Fashion', 2, 50000, 800000, 2015, 'Seed', 'Nathan Fielder', 'Raising Awareness of the Holocaust');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Locanda Vini & Olii', 'Brooklyn', 'Italian', 4.4, '$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('The Movement', 'Los Angeles', 'Fitness', 3, 15000, NULL, 2015, 'Seed', 'Nathan Fielder', 'No Gym. No Weights. Just Results.');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Rao''s', 'Uptown', 'Italian', 4.2, '$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('WUPHF!', 'Scranton', 'Social', 6, 25000, 10000, 2010, 'Seed', 'Ryan Howard', 'Cross-Portal Messaging System');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Minca', 'Downtown', 'Japanese', 4.4, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Fakeblock', 'Irvine', 'Mobile', 2, 3, NULL, 2013, 'Seed', 'George Michael', 'OC''s Most Popular Digital Wood Instrument');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Kenka', 'Downtown', 'Japanese', 4.3, '$', 'B');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Magic Heap', 'Fort Lauderdale', 'Augmented Reality', 500, 1800000000, 8000000000, 2013, 'D', 'Johnny Malkovich', '¯\_(ツ)_/¯');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Yakitori Taisho', 'Downtown', 'Japanese', 4.1, '$', 'B');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('HoloGrail', 'San Francisco', 'Technology', 30, 51000000, 1800000000, 2016, 'B', 'Daniel Li', 'Volumetric Display');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Xi''an Famous Foods', 'Midtown', 'Chinese', 4.4, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Voice2Txt', 'San Francisco', 'Mobile', 16, 1800000, 15000000, 2012, 'Seed', 'Cole Romano', 'Transcribes Voicemails to Texts');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Shake Shack', 'Midtown', 'American', 4.4, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('V-Arrr', 'San Francisco', 'Virtual Reality', 6, 750000, 2500000, 2015, 'Seed', 'Cole Romano', 'Pirate-Themed VR App');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Halal Guys', 'Midtown', 'Mediterranean', 4.4, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('REBU', 'San Francisco', 'Logistics', 15000, 11500000000, 70000000, 2009, 'G', 'Kravis Talanick', 'Ridesharing Platform');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Foodcademy', 'Midtown', 'American', 4.4, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Rave New World', 'San Francisco', 'Social', 8, 250000, 6000000, 2014, NULL, 'Sam Guss', 'Social Media for the EDM Community');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Sonnyboy''s', 'Brooklyn', 'Chinese', 4.2, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('WaterCnC', 'San Francisco', 'Travel', 4000, 4400000000, 25000000000, 2008, 'F', 'Crian Besky', 'Water Sharing Platform for Cooks and Chefs');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Cole Romano Experience', 'Brooklyn', 'Italian', 2.1, '$$$$$', 'C');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('RankerBot', 'San Francisco', 'Algorithms', 5, 1500000, 7600000, 2013, 'Acquired', 'Delaney', 'Water Sharing Platform for Cooks and Chefs');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Timbo Slice', 'Brooklyn', 'Pizza', 2.8, '$', 'B');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Xandesk', 'San Francisco', 'Customer Service', 100, 75500000, 640000000, 2012, 'IPO', 'Ronald Paris', 'Keep Frowning');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Scorpio Sisters', 'Downtown', 'American', 4.2, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Everyday.me', 'San Francisco', 'Mobile', 35, NULL, NULL, 2012, 'Seed', 'Yu-Kuan Lin', 'Journal that Captures the Special Moments');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('N.E.D', 'Uptown', 'American', 4.2, '$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Backsby', 'San Francisco', NULL, NULL, NULL, NULL, 2013, 'Seed', 'Oliver Plattner', NULL);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Great NY Noodletown', 'Chinatown', 'Chinese', 4.1, '$$', 'B');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Smart Host', 'Brooklyn', 'Data Analytics', 4, 380000, NULL, 2014, 'Acquired', 'Evan Hammer', 'Dynamic Pricing for Vacation Rentals');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Golden Unicorn', 'Chinatown', 'Chinese', 3.8, '$$', 'A');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Wo Hop', 'Chinatown', 'Chinese', 4.2, '$$', NULL);
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('StarsNGripes', 'Boulder', 'Social', 3, 2000000, 560000000, 2015, 'A', 'Gregory Hilt', 'Yelp for US Landmarks and Tourist Attractions');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Di Fara Pizza', 'Brooklyn', 'Pizza', 4.2, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('SoCorny', 'Omaha', 'Technology', 65, 25000000, 2000000000, 2013, 'B', 'Elon Tusk', 'Analytics Platform for Corn Production');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Kang Ho Dong Baekjeong', 'Midtown', 'Korean', 4.3, '$$$', 'C');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('VeVork', 'New York', 'Real Estate', 200, 750000000, 20000000000, 2010, 'G', 'Mada Nammneu', 'Co-relaxing Space for Vampires');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roti Roll Bombay Frankie', 'Uptown', 'Indian', 4.2, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Brrr', 'New York', 'Gambling', 10, 5000000, 322000000, 2012, 'A', 'Solo', 'eSports Betting');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jacob''s Pickles', 'Uptown', 'American', NULL, '$$', NULL);
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('BackPax', 'New York', 'Education', 2, 80000, 14000000, 2017, 'Seed', 'Jose Ferreira', 'MOOCs are Boo Hoo');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Dan and John''s Wings', 'Downtown', 'American', 4.5, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('CapitalPunishment', 'New York', 'Mobile', 15, 500000, 10000000, 2008, 'A', 'Cole Romano', 'Stock Market Brawler Game');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Ping''s Seafood', 'Chinatown', 'Chinese', 4.2, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Son of a Fletch', 'New York', 'Social', 4, 300000, 3000000, 2014, 'Seed', 'CC Vaught', 'Social Media App for Archery Enthusiasts');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('XO Kitchen', 'Chinatown', 'Chinese', 4.0, '$', 'B');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Yas Queen', 'New York', 'Health Care', 300, 45000000, 980000000, 2015, 'A', 'Jamie Brieman', 'Accelerating Breast Cancer Research');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Carbone', 'Downtown', 'Italian', 4.3, '$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Geocities-Lite', 'New York', 'Social', 20, 1000000, 50000000, 2012, 'A', 'Jim Jason', 'Mobile Friendly Geocities');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('I Sodi', 'Downtown', 'Italian', 4.5, '$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Cluster.ly', 'New York', 'Data Analytics', 10, 750000, 15000000, 2015, 'B', 'Hillary Green', NULL);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Lilia', 'Brooklyn', 'Italian', 4.4, '$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Codefellas', 'New York', 'Education', 50, 50000000, 10000000000, 2012, 'A', 'Zane Sims', 'The Not So Easy Way to Learn to Code');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Enid''s', 'Brooklyn', 'Soul Food', 4.0, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('kryptoPark', 'Palo Alto', 'Security', 70, 75000000, 10000000000, 2011, 'B', 'Joe Wang', 'Password Mgmt for Password Mgmt Services');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jajaja', 'Downtown', 'Vegetarian', 4.5, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('zZz', 'Palo Alto', 'SaaS', 20, 50000000, 800000000, 2008, 'C', 'Henry Campbell', 'Dream Tracking/Recording');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Smalls Jazz Club', 'Downtown', 'American', NULL, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Pita Pan', 'Palo Alto', 'Technology', 40, 30000000, 5500000000, 2015, 'B', 'Schuylar Croom', 'Drone Food Delivery Service');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Russ & Daughters', 'Downtown', 'American', 4.6, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('nova.ai', 'Palo Alto', 'Enterprise', 340, 3000000, 25000000, 2013, 'A', 'Nick Kinsella', NULL);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Meatball Shop', 'Downtown', 'American', 4.2, '$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('XNA', 'Palo Alto', 'Health Care', 250, 540000000, 760000000000, 2012, 'C', 'Owen Pilsner', 'Genome Database');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Dirt Candy', 'Downtown', 'Vegetarian', 4.4, '$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Cloud Nine', 'Palo Alto', 'Cloud Computing', 35, 36000000, 140000000, 2013, 'A', 'Jase Farmer', NULL);
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Ippudo', 'Downtown', 'Japanese', 4.4, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Scramptons', 'Long Island', 'Security', 5, 200000, 8000000000, 2017, 'Seed', 'Henri Bernard', 'Home Security');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('St. Anselm', 'Brooklyn', 'Steak', 4.5, '$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Carcheesian Plane', 'Paris', 'Education', 30, 3000000, 50000000, 2012, 'A', 'Jim Mussen', 'A Gouda Place to Learn Math');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Marea', 'Midtown', 'Italian', 4.5, '$$$$', 'A');
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Dungees and Dragos', 'Atlanta', 'Games', 3, 300000, 1600000, 2014, 'Seed', 'Stuart Stickler', 'Tabletop Gaming for the Insufferable');
 
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Lighthouse', 'Brooklyn', 'American', 4.6, '$$', NULL);
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('VaporWear', 'Virginia Beach', 'Social', 15, 450000, 14000000, 2017, 'Seed', 'TJ Harris', 'Social Network for Vaping Enthusiasts');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('RICE Media', 'Brooklyn', 'Video Streaming', 3000, 730000000, NULL, 1994, NULL, 'Shayna Craftsman', '2cool4school');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Townie666', 'Brooklyn', 'E-commerce', 2, 20000, 80000, 2017, 'Seed', 'Sonny Li', '*_*');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Kimberly', 'Brooklyn', 'E-commerce', 2, 100000, 8500000, 2018, 'Seed', 'Jillian Kuzmin', 'Synthetic Diamonds');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Wakeful', 'Brooklyn', 'Virtual Reality', 3, 30000, 1800000, 2016, 'Seed', 'Maria Epstein', 'Meditation VR App');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('MLGB', 'Columbus', 'E-commerce', 2, 50000, 500000, 2012, 'Seed', 'Xin Xin', 'Authentic Streetwear or DDoS''ed');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('PostGurt', 'Savannah', 'Social', 6, 550000, 200000000, 2013, 'Seed', 'Lauretta Brieman', 'Subscription Based Yogurt in the Mail');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Virtual Tour', 'Chicago', 'E-commerce', 12, 750000, 120000000, 2014, 'Seed', 'Ari L''Boy', 'Real Estate for Fake People');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Eärendil', 'Los Angeles', 'Mobile', 2, 50000, 200000, 2009, 'Seed', 'Kent Bergensen', 'Flashlight App');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('QT', 'Los Angeles', 'Social', 3, 1500000, 4500000, 2018, 'Seed', 'Keiko', 'Who Can Be More Kawaii (づ｡◕‿‿◕｡)づ');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('LiftHub', 'Los Angeles', 'Fitness', 30, 2350000, 15000000, 2015, 'A', 'Mike McManus', 'Eat Clean. Train Dirty.');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Napflix', 'Los Angeles', 'Mobile', 1, NULL, NULL, 2016, 'Stealth', 'Reed Samson', 'Bootleg Netflix Shows');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('CyShare', 'Seattle', 'Social', 11, 300000, 10000000, 2015, 'B', 'Cathy Zhou', 'Bicycle Sharing Service');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('FizzyWillow', 'Seattle', 'Social', 6, 2000000, 120000000, 2014, 'C', 'Sandra Emmerson', 'Sparkling Wine Review App');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Q Green', 'Seattle', 'Nanotechnology', 12, 3600000, 150000000, 2013, 'A', 'Quan Li', NULL);
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Friend, Where Is My Vehicle', 'Washington DC', 'SaaS', 8, 1800000, 2000000, 2016, 'A', 'Roland Tavurner', 'GPS Services');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Allniter', 'New Delhi', 'Education', 250, 1000000, 15000000, 2009, 'A', 'Rohan Taneja', 'Homework/Essay Help');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Gnome Reverser', 'Denver', 'Mobile', 10, 1500000, 10000000, 2014, 'A', 'Bruce Dzeda', 'Location Service to Find Your Keys/Wallet');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('ScoopAble', 'Denver', 'Social', 14, 1000000, 7600000, 2016, 'Seed', 'Zoe Gfell', 'Yogurt Finder');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('YoBert', 'New York', 'Education', 31, 800000, 40000000, 2016, 'Acquired', 'Ernie Dzeda', 'Seasme Street Themed Educational App');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Trufflez', 'New York', 'Mobile', 23, 1000000, 12000000, 2014, 'Seed', NULL, 'AI Suggests Recipes Based on Photos');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('Unfade', 'New York', 'Fashion', 4, 400000, 5600000, 2016, 'A', 'Peggy Grimes', 'Everything Hair');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('OrangeYouLonely', 'Minneapolis', 'Social', 20, 1200000, 14000000, 2012, 'Seed', 'Gus Dawson', 'Dating App for Farmers');
+
+INSERT INTO startups(name, location, category, employees, raised, valuation, founded, stage, ceo, info) VALUES ('WellDeserved', 'San Francisco', 'E-commerce', 4, NULL, NULL, 2015, 'Seed', 'Kasima Tharnpipitchai', 'The Premiere Marketplace for Privilege');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```
-
-
-
-
-
-# Multiple Tables
-
-
-
-
-
-## 2. Primary Key
-
-**Narrative**
-
-The primary key in the `artists` is literally an `id` value for a record. We're going to use this value to connect `artists` to the `albums` they have produced.
-
-**Checkpoint 1**
-
-We have created a table named `albums` for you. Create a second table named `artists`.
-
-In the code editor, type:
-
-```sql
-CREATE TABLE artists(id INTEGER PRIMARY KEY, name TEXT);
-```
-
-**Tests.activeBatsTest('test.bats', callback);**
-
-table_exists() {
-  sqlite3 output.sqlite "SELECT * FROM $1 LIMIT 1"
-}
-
-column_exists?() {
-  sqlite3 output.sqlite "SELECT $2 FROM $1"
-}
-
-@test "Create an 'artists' table" {
-  run table_exists artists
-  [ "$status" -eq 0 ]
-}
-
-@test "Include an id column" {
-  run column_exists? artists id
-  [ "$status" -eq 0 ]
-}
-
-@test "Include a name column" {
-  run column_exists? artists name
-  [ "$status" -eq 0 ]
-}
-
-@test "Artists table should be empty." {
-  run sqlite3 output.sqlite "SELECT COUNT(*) FROM artists"
-  [ "$output" -eq 0 ]
-}
-
-@test "Artists table should have two columns." {
-  run sqlite3 output.sqlite "INSERT INTO artists VALUES(1,2)"
-  [ "$status" -eq 0 ]
-}
-
-@test "Artists table should have a primary key." {
-  run sqlite3 output.sqlite "INSERT INTO artists(id) VALUES(1)"
-  [ "$status" -eq 19 ]
-}
-
-@test "Delete data inserted for tests" {
-  sqlite3 output.sqlite "DELETE FROM artists WHERE id > 0"
-}
-
-
-
-
-
-
-
-
-**Checkpoint 1**
-
-Sometimes our data needs a massive change, type the following to recreate our `albums` table safely even if the table doesn't exist.
-
-```sql
- DROP TABLE IF EXISTS albums;
-
- CREATE TABLE IF NOT EXISTS albums(
-    id INTEGER PRIMARY KEY,
-    name TEXT,
-    artist_id INTEGER,
-    year INTEGER);
-```
-
-**Tests.activeBatsTest('test.bats', callback);**
-
-table_exists() {
-  sqlite3 output.sqlite "SELECT * FROM $1 LIMIT 1"
-}
-
-column_exists?() {
-  sqlite3 output.sqlite "SELECT $2 FROM $1"
-}
-
-@test "Create an 'albums' table" {
-  run table_exists albums
-  [ "$status" -eq 0 ]
-}
-
-@test "Include an id column" {
-  run column_exists? albums id
-  [ "$status" -eq 0 ]
-}
-
-@test "Include a name column" {
-  run column_exists? albums name
-  [ "$status" -eq 0 ]
-}
-
-@test "Include a year column" {
-  run column_exists? albums year
-  [ "$status" -eq 0 ]
-}
-
-@test "Include a artist_id column" {
-  run column_exists? albums artist_id
-  [ "$status" -eq 0 ]
-}
-
-@test "Albums table should be empty." {
-  run sqlite3 output.sqlite "SELECT COUNT(*) FROM albums"
-  [ "$output" -eq 0 ]
-}
-
-@test "Albums table should have four columns." {
-  run sqlite3 output.sqlite "INSERT INTO albums VALUES(1,2,3,4)"
-  [ "$status" -eq 0 ]
-}
-
-@test "Albums table should have a primary key." {
-  run sqlite3 output.sqlite "INSERT INTO albums(id) VALUES(1)"
-  [ "$status" -eq 19 ]
-}
-
-@test "Delete data inserted for tests" {
-  sqlite3 output.sqlite "DELETE FROM albums WHERE id > 0"
-}
-
-
-
-
-## 8. Multiple Table Creation (DELETED)
-
-**Narrative**
-
-```sql
- DROP TABLE IF EXISTS albums;
-
- CREATE TABLE IF NOT EXISTS albums(
-   id INTEGER PRIMARY KEY,
-   name TEXT,
-   artist_id INTEGER,
-   year INTEGER);
-```
-
-`DROP TABLE IF EXISTS` is a SQL command that will drop a table or do nothing, depending on if the table already exists. Usually if you attempt to drop a table that does not exist your SQL client will throw an error but in this case, it will fail silently. This is best for situations where your data is in an unknown state and you intend to reseed it.
-
-`CREATE TABLE IF NOT EXISTS`, by contrast, will create a table or do nothing, depending on if the table already exists. These two are frequently used together when a database has an external source of truth and the two have fallen out of sync.
-
-**Checkpoint 1**
-
-Of course, usually, we will want to recreate the table somewhat differently than before. Let's fix something about that albums table this time. Type:
-
-```sql
- DROP TABLE IF EXISTS albums;
-
- CREATE TABLE IF NOT EXISTS albums(
-   id INTEGER PRIMARY KEY,
-   name TEXT,
-   year INTEGER,
-   artist_id INTEGER,
-   FOREIGN KEY(artist_id) REFERENCES artist(id)
- );
-```
-
-**Tests.activeBatsTest('test.bats', callback);**
-
-table_exists() {
-  sqlite3 output.sqlite "SELECT * FROM $1 LIMIT 1"
-}
-
-column_exists?() {
-  sqlite3 output.sqlite "SELECT $2 FROM $1"
-}
-
-get_lowercase_schema() {
-	sqlite3 output.sqlite "SELECT sql FROM sqlite_master WHERE TYPE='table' AND NAME='$1'" | tr -d '\n' | tr '[[:upper:]]' '[[:lower:]]'
-}
-
-@test "Create an 'albums' table" {
-  run table_exists albums
-  [ "$status" -eq 0 ]
-}
-
-@test "Include an id column" {
-  run column_exists? albums id
-  [ "$status" -eq 0 ]
-}
-
-@test "Include a name column" {
-  run column_exists? albums name
-  [ "$status" -eq 0 ]
-}
-
-@test "Include a year column" {
-  run column_exists? albums year
-  [ "$status" -eq 0 ]
-}
-
-@test "Include a artist_id column" {
-  run column_exists? albums artist_id
-  [ "$status" -eq 0 ]
-}
-
-@test "Albums table should be empty." {
-  run sqlite3 output.sqlite "SELECT COUNT(*) FROM albums"
-  [ "$output" -eq 0 ]
-}
-
-@test "Albums table should have four columns." {
-  run sqlite3 output.sqlite "INSERT INTO albums VALUES(1,2,3,4)"
-  [ "$status" -eq 0 ]
-}
-
-@test "Albums table should have a primary key." {
-  run sqlite3 output.sqlite "INSERT INTO albums(id) VALUES(1)"
-  [ "$status" -eq 19 ]
-}  
-
-@test "Make sure the columns have appropriate constraints set." {
-  run get_lowercase_schema albums
-  [[ $output =~ foreign[[:space:]]*key\(artist_id\)[[:space:]]*references[[:space:]]*artist\(id\) ]]
-}
-
-@test "Delete data inserted for tests" {
-  sqlite3 output.sqlite "DELETE FROM albums WHERE id > 0"
-}
-
-**Config**
-
-Command to be run the first time user starts this exercise.
-
-cp ./.exercise_1.sqlite db.sqlite
-
-
-
-## 9. Foreign Key Constraints (DELETED)
-
-**Narrative**
-
-```sql
- DROP TABLE IF EXISTS albums;
-
- CREATE TABLE IF NOT EXISTS albums(
-   id INTEGER PRIMARY KEY,
-   name TEXT,
-   year INTEGER,
-   artist_id INTEGER,
-   FOREIGN KEY(artist_id) REFERENCES artist(id)
- );
-```
-
-`FOREIGN KEY` can also be a _constraint_, specified using this syntax.
-
-`artist_id` is a column belonging to the table currently being defined.
-
-If we try to `INSERT` data into our `albums` table where the new value for `artist_id` does not match an `id` in our `artist` table, we can't. This is valuable for validating our data (and making sure we don't insert the wrong information into our database)!
-
-**Checkpoints**
-
-In this lesson we learned about relationships between tables in relational databases. We also learned how to query data from multiple tables using SQL.
-
-Let's summarize what we've learned so far.
-
-**Config**
-
-Command to be run the first time user starts this exercise.
-
-cp ./.exercise_1.sqlite db.sqlite
