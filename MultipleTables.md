@@ -36,7 +36,6 @@ INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip, 
 
 INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (1003, '2017-12-06', '7:45 am', '9:01 am', 4, 4, 'X', 65.00, 3.00, '42.6413 N', '72.7781 W', '42.6413 N', '79.1254 W');
 
-
 INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (101, 'Sonny', 'Li', '@sonnynomnom', 'bushwick', 4.66, NULL, 1003, 923);
 
 INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (106, 'Chris', 'Christie', '@chrischristie', 'jersey', 2.32, NULL, 1001, 64);
@@ -52,7 +51,7 @@ INSERT INTO cars(id, model, OS, engineer_id, status, trips_completed) VALUES (3,
 
 ```
 
-DELETED Project:
+# DELETED Project
 
 1. Create a table named `tracks` with an `id`, `title`, and `album_id` column. The `id` column should be the `PRIMARY KEY`.
 2. "Smooth Criminal" is a track from Michael Jackson's "Bad" album. Add this track to the database.
