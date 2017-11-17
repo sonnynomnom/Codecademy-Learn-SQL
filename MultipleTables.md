@@ -51,8 +51,15 @@ INSERT INTO cars(id, model, OS, engineer_id, status, trips_completed) VALUES (3,
 
 ```
 
+DELETED Project:
 
-
+1. Create a table named `tracks` with an `id`, `title`, and `album_id` column. The `id` column should be the `PRIMARY KEY`.
+2. "Smooth Criminal" is a track from Michael Jackson's "Bad" album. Add this track to the database.
+3. Add more tracks to the database.
+4. Combine the `albums` and `tracks` tables using an `INNER JOIN`. Order the query by `album_id`.
+5. Combine the `albums` and `artists` table using a `LEFT OUTER JOIN`. Let `albums` be the left table.
+6. Combine the `albums` and `artists` table using a `LEFT OUTER JOIN`. Let `artists` be the left table.
+7. Use any join you like to combine the `albums` and `tracks` table. Rename the `album_id` column to `Albums`.
 
 
 # Multiple Tables
