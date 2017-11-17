@@ -57,15 +57,15 @@ INSERT INTO riders(id, first, last, username, rating, last_trip, total_trips, re
 
 
 
-INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (1, 'Ada', 'Ryzac', 'active', 82);
+INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (1, 'Ada', 'Ryzac', 'active', 82);
 
-INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (2, 'Ada', 'Ryzac', 'active', 30);
+INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (2, 'Ada', 'Ryzac', 'active', 30);
 
-INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (3, 'Turing XL', 'Ryzac', 'active', 164);
+INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (3, 'Turing XL', 'Ryzac', 'active', 164);
 
-INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (4, 'Akira', 'Finux', 'active', 22);
+INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (4, 'Akira', 'Finux', 'active', 22);
 
-INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (5, 'Akira', 'Finux', 'maintenance', 6);
+INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (5, 'Akira', 'Finux', 'maintenance', 6);
 
 ```
 
