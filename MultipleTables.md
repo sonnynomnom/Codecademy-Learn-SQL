@@ -22,7 +22,7 @@ CREATE TABLE trips(id INTEGER PRIMARY KEY, date TEXT, pickup TEXT, dropoff TEXT,
 
 CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, location TEXT, rating INTEGER, referred INTEGER, last_trip_id INTEGER, total_trips INTEGER);
 
-CREATE TABLE self_driving_cars(id INTEGER PRIMARY KEY, model TEXT, OS TEXT, engineer_id TEXT, status TEXT, trips_completed INTEGER);
+CREATE TABLE cars(id INTEGER PRIMARY KEY, model TEXT, OS TEXT, engineer_id TEXT, status TEXT, trips_completed INTEGER);
 
 DROP TABLE trips;
 DROP TABLE riders;
@@ -42,11 +42,11 @@ INSERT INTO riders(id, first, last, username, location, rating, referred, last_t
 
 
 
-INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trips_completed) VALUES (1, 'Ada001', 'Finux', 23, 'active', 45);
+INSERT INTO cars(id, model, OS, engineer_id, status, trips_completed) VALUES (1, 'Ada001', 'Finux', 23, 'active', 45);
 
-INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trips_completed) VALUES (2, 'Ada002', 'Finux', 23, 'active', 30);
+INSERT INTO cars(id, model, OS, engineer_id, status, trips_completed) VALUES (2, 'Ada002', 'Finux', 23, 'active', 30);
 
-INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trips_completed) VALUES (3, 'Turing', 'iApollo', 123, 'active', 154);
+INSERT INTO cars(id, model, OS, engineer_id, status, trips_completed) VALUES (3, 'Turing', 'iApollo', 123, 'active', 154);
 
 
 ```
