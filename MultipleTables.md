@@ -18,33 +18,35 @@ WHERE name = 'Blonde';
 
 ```sql
 
-CREATE TABLE trips(id INTEGER PRIMARY KEY, date TEXT, pickup_time TEXT, pickup_long TEXT, pickup_lat TEXT, dropoff_time TEXT, dropoff_long TEXT, dropoff_lat TEXT, customer_id INTEGER, driver_id INTEGER, type TEXT, cost INTEGER, tip INTEGER);
+CREATE TABLE trips(id INTEGER PRIMARY KEY, date TEXT, pickup TEXT, dropoff TEXT, customer_id INTEGER, car_id INTEGER, type TEXT, cost INTEGER, tip INTEGER, pickup_long TEXT, pickup_lat TEXT, dropoff_long TEXT, dropoff_lat TEXT);
 
-CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, location TEXT, rating INTEGER, referred INTEGER, first_trip_id INTEGER, last_trip_id INTEGER, total_trips INTEGER, signup_timestamp1 TEXT, timestamp1 TEXT);
+CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, location TEXT, rating INTEGER, referred INTEGER, last_trip_id INTEGER, total_trips INTEGER);
 
-CREATE TABLE self_driving_cars(id INTEGER PRIMARY KEY, model TEXT, OS TEXT, engineer TEXT, status TEXT, trips_completed INTEGER);
+CREATE TABLE self_driving_cars(id INTEGER PRIMARY KEY, model TEXT, OS TEXT, engineer_id TEXT, status TEXT, trips_completed INTEGER);
 
-...
+DROP TABLE trips;
+DROP TABLE riders;
+DROP TABLE cars;
 
-INSERT INTO trips(id, date, pickup_time, pickup_long, pickup_lat, dropoff_time, dropoff_long, dropoff_lat, customer_id, driver_id, type, cost, tip) VALUES (4927, '2017-12-05', '8:00 AM', '40.6413 N', '73.7781 W', '8:15 AM', '40.6413 N', '73.7781 W', 2, 1, 'X', 10.00, 2.00);
+INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (4927, '2017-12-05', '8:00 AM', '8:15 AM', 2, 1, 'X', 10.00, 2.00, '40.6413 N', '73.7781 W', '40.6413 N', '73.7781 W');
 
-INSERT INTO trips(id, date, pickup_time, pickup_long, pickup_lat, dropoff_time, dropoff_long, dropoff_lat, customer_id, driver_id, type, cost, tip) VALUES (4928, '2017-12-05', '8:10 AM', '41.6413 N', '79.1254 W', '8:35 AM', '41.6413 N', '72.7781 W', 3, 3, 'POOL', 32.00, 0.00);
+INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (4928, '2017-12-05', '8:10 AM', '8:35 AM', 3, 3, 'POOL', 32.00, 0.00, '41.6413 N', '79.1254 W', '41.6413 N', '72.7781 W');
 
-INSERT INTO trips(id, date, pickup_time, pickup_long, pickup_lat, dropoff_time, dropoff_long, dropoff_lat, customer_id, driver_id, type, cost, tip) VALUES (4929, '2017-12-06', '7:45 AM', '42.6413 N', '72.7781 W', '9:01 AM', '42.6413 N', '79.1254 W', 4, 4, 'X', 65.00, 3.00);
+INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (4929, '2017-12-06', '7:45 AM', '9:01 AM', 4, 4, 'X', 65.00, 3.00, '42.6413 N', '72.7781 W', '42.6413 N', '79.1254 W');
 
-...
+
 
 INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (101, 'Sonny', 'Li', '@sonnynomnom', 'bushwick', 4.66, NULL, 4444, 923);
 
 INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (106, 'Chris', 'Christie', '@chrischristie', 'jersey', 2.32, NULL, 2331, 64);
 
-...
 
-INSERT INTO self_driving_cars(id, model, OS, engineer, status, trips_completed) VALUES (1, 'Ada001', 'Finux', 23, 'active', 45);
 
-INSERT INTO self_driving_cars(id, model, OS, engineer, status, trips_completed) VALUES (2, 'Ada002', 'Finux', 23, 'active', 30);
+INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trips_completed) VALUES (1, 'Ada001', 'Finux', 23, 'active', 45);
 
-INSERT INTO self_driving_cars(id, model, OS, engineer, status, trips_completed) VALUES (3, 'Edsger', 'iApollo', 123, 'active', 154);
+INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trips_completed) VALUES (2, 'Ada002', 'Finux', 23, 'active', 30);
+
+INSERT INTO self_driving_cars(id, model, OS, engineer_id, status, trips_completed) VALUES (3, 'Turing', 'iApollo', 123, 'active', 154);
 
 
 ```
