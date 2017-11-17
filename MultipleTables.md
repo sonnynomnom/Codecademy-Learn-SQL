@@ -25,20 +25,22 @@ CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT
 CREATE TABLE cars(id INTEGER PRIMARY KEY, model TEXT, OS TEXT, engineer_id TEXT, status TEXT, trips_completed INTEGER);
 
 DROP TABLE trips;
+
 DROP TABLE riders;
+
 DROP TABLE cars;
 
-INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (4927, '2017-12-05', '8:00 AM', '8:15 AM', 2, 1, 'X', 10.00, 2.00, '40.6413 N', '73.7781 W', '40.6413 N', '73.7781 W');
+INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (1001, '2017-12-05', '8:00 am', '8:15 am', 2, 1, 'X', 10.00, 2.00, '40.6413 N', '73.7781 W', '40.6413 N', '73.7781 W');
 
-INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (4928, '2017-12-05', '8:10 AM', '8:35 AM', 3, 3, 'POOL', 32.00, 0.00, '41.6413 N', '79.1254 W', '41.6413 N', '72.7781 W');
+INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (1002, '2017-12-05', '8:10 am', '8:35 am', 3, 3, 'POOL', 32.00, 0.00, '41.6413 N', '79.1254 W', '41.6413 N', '72.7781 W');
 
-INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (4929, '2017-12-06', '7:45 AM', '9:01 AM', 4, 4, 'X', 65.00, 3.00, '42.6413 N', '72.7781 W', '42.6413 N', '79.1254 W');
+INSERT INTO trips(id, date, pickup, dropoff, customer_id, car_id, type, cost, tip, pickup_long, pickup_lat, dropoff_long, dropoff_lat) VALUES (1003, '2017-12-06', '7:45 am', '9:01 am', 4, 4, 'X', 65.00, 3.00, '42.6413 N', '72.7781 W', '42.6413 N', '79.1254 W');
 
 
 
-INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (101, 'Sonny', 'Li', '@sonnynomnom', 'bushwick', 4.66, NULL, 4444, 923);
+INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (101, 'Sonny', 'Li', '@sonnynomnom', 'bushwick', 4.66, NULL, 1003, 923);
 
-INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (106, 'Chris', 'Christie', '@chrischristie', 'jersey', 2.32, NULL, 2331, 64);
+INSERT INTO riders(id, first, last, username, location, rating, referred, last_trip_id, total_trips) VALUES (106, 'Chris', 'Christie', '@chrischristie', 'jersey', 2.32, NULL, 1001, 64);
 
 
 
