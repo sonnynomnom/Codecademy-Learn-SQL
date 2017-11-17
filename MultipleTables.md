@@ -30,17 +30,17 @@ DROP TABLE riders;
 
 DROP TABLE cars;
 
-INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1001, '2017-12-05', '06:45', '07:10', 102, 1, 'X', 28.60, 2.40);
+INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1001, '2017-12-05', '06:45', '07:10', 102, 1, 'X', 28.64, NULL);
 
-INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1002, '2017-12-05', '08:00', '08:15', 101, 5, 'POOL', 9.10, 0);
+INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1002, '2017-12-05', '08:00', '08:15', 101, 5, 'POOL', 9.11, NULL);
 
-INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1003, '2017-12-05', '09:30', '09:50', 104, 4, 'X', 24.00, 3.00);
+INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1003, '2017-12-05', '09:30', '09:50', 104, 4, 'X', 24.98, 3.02);
 
-INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1004, '2017-12-05', '13:40', '14:05', 105, 1, 'X', 31.20, 0);
+INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1004, '2017-12-05', '13:40', '14:05', 105, 1, 'X', 31.27, NUL);
 
-INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1005, '2017-12-05', '15:15', '16:00', 103, 2, 'POOL', 18.95, 0);
+INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1005, '2017-12-05', '15:15', '16:00', 103, 2, 'POOL', 18.95, NULL);
 
-INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1006, '2017-12-05', '08:20', '18:55', 101, 3, 'XL', 78.00, 7.00);
+INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost, tip) VALUES (1006, '2017-12-05', '18:20', '18:55', 101, 3, 'XL', 78.52, 7.48);
 
 
 
@@ -50,9 +50,9 @@ INSERT INTO riders(id, first, last, username, rating, referred, last_trip, total
 
 
 
-INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (1, 'Ada001', 'Finux', 23, 'active', 45);
+INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (1, 'Ada', 'Finux', 23, 'active', 45);
 
-INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (2, 'Ada002', 'Finux', 23, 'active', 30);
+INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (2, 'Ada', 'Finux', 23, 'active', 30);
 
 INSERT INTO cars(id, model, OS, engineer, status, trips_completed) VALUES (3, 'Turing XL', 'iApollo', 32, 'active', 154);
 
