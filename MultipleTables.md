@@ -20,7 +20,7 @@ WHERE name = 'Blonde';
 
 CREATE TABLE trips(id INTEGER PRIMARY KEY, date TEXT, pickup TEXT, dropoff TEXT, rider_id INTEGER, car_id INTEGER, type TEXT, cost INTEGER);
 
-CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, rating INTEGER, last_trip INTEGER, total_trips INTEGER);
+CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, rating INTEGER, last_trip INTEGER, total_trips INTEGER, referred INTEGER);
 
 CREATE TABLE cars(id INTEGER PRIMARY KEY, model TEXT, OS TEXT, status TEXT, trips_completed INTEGER);
 
