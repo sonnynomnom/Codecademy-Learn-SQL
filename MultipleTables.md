@@ -63,9 +63,7 @@ INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (2, 'Ada', 'Ryza
 
 INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (3, 'Turing XL', 'Ryzac', 'active', 164);
 
-INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (4, 'Akira', 'Finux', 'active', 22);
-
-INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (5, 'Akira', 'Finux', 'maintenance', 6);
+INSERT INTO cars(id, model, OS, status, trips_completed) VALUES (4, 'Akira', 'Finux', 'maintenance', 22);
 
 ```
 
