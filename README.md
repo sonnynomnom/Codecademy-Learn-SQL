@@ -119,6 +119,9 @@ FROM movies;"  > tmp.txt
 
 ## Project
 
+In this project, you will write queries to retrieve information from a table called `nomnom`, filled with Codecademy's favorite restaurants in NYC.
+
+
 ```sql
 
 CREATE TABLE nomnom(name TEXT, neighborhood TEXT, cuisine TEXT, review INTEGER, price TEXT, health TEXT);
