@@ -121,6 +121,7 @@ FROM movies;"  > tmp.txt
 
 In this project, you will write queries to retrieve information from a table called `nomnom`, filled with Codecademy's favorite restaurants in NYC.
 
+(the instructions provided are a general guideline; feel free to experiment writing your own queries.)
 
 ```sql
 
