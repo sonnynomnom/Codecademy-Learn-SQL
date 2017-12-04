@@ -2,13 +2,6 @@
 
 ---
 
-##### Syllabus
-
-| 🖥 [Manipulation](https://botpress.io) | 💬 [Queries](https://slack.botpress.io) | 📦 [Aggregate Functions](https://www.npmjs.com/search?q=botpress) | 🚀 [Multiple Tables](https://botpress.io/blog) |
-| ------------- | ------- | -------- | --------- |
-
----
-
 
 Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
 
@@ -38,7 +31,6 @@ UPDATE movies
 SET genre = NULL
 WHERE name = 'Ali Wong: Baby Cobra';
 ```
-
 
 
 # Queries
