@@ -1,5 +1,15 @@
 # Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 
+---
+
+##### Syllabus
+
+| 🖥 [Manipulation](https://botpress.io) | 💬 [Queries](https://slack.botpress.io) | 📦 [Aggregate Functions](https://www.npmjs.com/search?q=botpress) | 🚀 [Multiple Tables](https://botpress.io/blog) |
+| ------------- | ------- | -------- | --------- |
+
+---
+
+
 Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
 
 Add file: `touch sqlite3 union.sqlite`
