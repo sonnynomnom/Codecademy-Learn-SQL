@@ -13,7 +13,7 @@
 `cd workspaces`  
 `cd workspaces`  
 `cd sql_unit_2`   
-`cd project` . 
+`cd project`  
 
 Add file: `touch sqlite3 union.sqlite`
 
