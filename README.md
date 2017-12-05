@@ -12,9 +12,21 @@
 
 Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
 
+`cd workspaces`
+`cd workspaces`
+`cd sql_unit_2`
+`cd project`
+
 Add file: `touch sqlite3 union.sqlite`
 
+...
+
 `./upload workspaces/sql_unit_4 --type:sql`
+
+Commit to master.
+
+
+
 
 ```sql
 CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
