@@ -11,6 +11,10 @@ Project folder: `learn-sql-multiple-tables-prj-v2`
 
 `./upload workspaces/learn-sql-multiple-tables-prj-v2 --type:sql`
 
+`./upload workspaces/learn-sql-multiple-tables-magazines --type:sql`
+
+`./upload workspaces/learn-sql-multiple-tables-newspapers --type:sql`
+
 
 ```sql
 CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
