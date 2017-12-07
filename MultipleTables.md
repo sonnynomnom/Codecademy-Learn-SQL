@@ -4,6 +4,7 @@
 
 
 Project folder: `learn-sql-multiple-tables-prj-v2`
+
 `./upload workspaces/learn-sql-multiple-tables-prj-v2 --type:sql`
 
 
