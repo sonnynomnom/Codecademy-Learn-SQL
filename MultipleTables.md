@@ -3,6 +3,8 @@
 `./upload workspaces/sql_unit_4 --type:sql`
 
 
+Magazines: `learn-sql-multiple-tables-magazines`
+Newspapers: `learn-sql-multiple-tables-newspapers`
 Project folder: `learn-sql-multiple-tables-prj-v2`
 
 `./upload workspaces/learn-sql-multiple-tables-prj-v2 --type:sql`
