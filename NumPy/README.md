@@ -112,7 +112,7 @@ eggs = eggs[eggs==1]
 
 cookies = recipes[2]
 
-double_batch = cupcakes*2
+double_batch = cupcakes * 2
 
 grocery_list = cookies + double_batch
 
