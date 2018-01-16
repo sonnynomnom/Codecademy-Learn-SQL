@@ -2,6 +2,20 @@
 
 `./upload workspaces/sql_unit_4 --type:sql`
 
+
+Magazines: `learn-sql-multiple-tables-magazines`
+
+Newspapers: `learn-sql-multiple-tables-newspapers`
+
+Project folder: `learn-sql-multiple-tables-prj-v2`
+
+`./upload workspaces/learn-sql-multiple-tables-prj-v2 --type:sql`
+
+`./upload workspaces/learn-sql-multiple-tables-magazines --type:sql`
+
+`./upload workspaces/learn-sql-multiple-tables-newspapers --type:sql`
+
+
 ```sql
 CREATE TABLE albums_new(id INTEGER, name TEXT, artist_id INTEGER, year INTEGER);
 
@@ -20,13 +34,17 @@ WHERE name = 'Blonde';
 
 CREATE TABLE trips(id INTEGER PRIMARY KEY, date TEXT, pickup TEXT, dropoff TEXT, rider_id INTEGER, car_id INTEGER, type TEXT, cost INTEGER);
 
-CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, rating INTEGER, last_trip INTEGER, total_trips INTEGER, referred INTEGER);
+CREATE TABLE riders(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, rating INTEGER, total_trips INTEGER, referred INTEGER);
+
+CREATE TABLE riders2(id INTEGER PRIMARY KEY, first TEXT, last TEXT, username TEXT, rating INTEGER, total_trips INTEGER, referred INTEGER);
 
 CREATE TABLE cars(id INTEGER PRIMARY KEY, model TEXT, OS TEXT, status TEXT, trips_completed INTEGER);
 
 DROP TABLE trips;
 
 DROP TABLE riders;
+
+DROP TABLE riders2;
 
 DROP TABLE cars;
 
@@ -44,16 +62,21 @@ INSERT INTO trips(id, date, pickup, dropoff, rider_id, car_id, type, cost) VALUE
 
 
 
-INSERT INTO riders(id, first, last, username, rating, last_trip, total_trips, referred) VALUES (101, 'Sonny', 'Li', '@sonnynomnom', 4.66, 1006, 352, NULL);
+INSERT INTO riders(id, first, last, username, rating, total_trips, referred) VALUES (101, 'Sonny', 'Li', '@sonnynomnom', 4.66, 352, NULL);
 
-INSERT INTO riders(id, first, last, username, rating, last_trip, total_trips, referred) VALUES (102, 'Laura', 'Breiman', '@lauracle', 4.99, 1003, 687, 101);
+INSERT INTO riders(id, first, last, username, rating, total_trips, referred) VALUES (102, 'Laura', 'Breiman', '@lauracle', 4.99, 687, 101);
 
-INSERT INTO riders(id, first, last, username, rating, last_trip, total_trips, referred) VALUES (103, 'Kassa', 'Korley', '@kassablanca', 4.63, 1001, 42, NULL);
+INSERT INTO riders(id, first, last, username, rating, total_trips, referred) VALUES (103, 'Kassa', 'Korley', '@kassablanca', 4.63, 42, NULL);
 
-INSERT INTO riders(id, first, last, username, rating, last_trip, total_trips, referred) VALUES (104, 'Yakov', 'Kagan', '@yakovkagan', 4.52, 121, 1910, 103);
+INSERT INTO riders(id, first, last, username, rating, total_trips, referred) VALUES (104, 'Yakov', 'Kagan', '@yakovkagan', 4.52, 1910, 103);
 
 
 
+INSERT INTO riders2(id, first, last, username, rating, total_trips, referred) VALUES (105, 'Zach', 'Sims', '@zsims', 4.85, 787, NULL);
+
+INSERT INTO riders2(id, first, last, username, rating, total_trips, referred) VALUES (106, 'Eric', 'Vaught', '@posturelol', 4.96, 54, 101);
+
+INSERT INTO riders2(id, first, last, username, rating, total_trips, referred) VALUES (107, 'Jilly', 'Beans', '@jillkuzmin', 4.70, 32, 101);
 
 
 
