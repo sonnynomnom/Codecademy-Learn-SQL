@@ -20,5 +20,6 @@ test_2 = np.array([79, 100, 86, 93, 91])
 test_3 = np.array([87, 85, 72, 90, 92])
 
 # give each student two extra points
+
 test_3_fixed = test_3 + 2
 ```
