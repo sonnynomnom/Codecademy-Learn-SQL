@@ -25,6 +25,11 @@ Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
 
 Commit to master.
 
+In GitHub Flavored Markdown, you can use a <kbd> tag to represent keyboard keys.
+  
+<kbd>control</kbd> + <kbd>c</kbd> - "kills" the process
+
+Press <kbd>enter</kbd> 
 
 
 
