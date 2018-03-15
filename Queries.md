@@ -24,8 +24,6 @@ INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (229, 'The Big Sic
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (230, 'Deadpool', 'action', 2016, NULL);
 ```
 
-./upload workspaces/sql_unit_2 --type:sql
-
 ```sql
 UPDATE movies
 SET genre = NULL
