@@ -319,5 +319,86 @@ UPDATE movies
 SET rated = 'PG'
 WHERE id = 24;
 
-Indiana Jones and the Kingdom of the Crystal Skull
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 25;
 
+UPDATE movies
+SET rated = 'PG'
+WHERE id = 26;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 27;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 28;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 29;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 30;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 31;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 31;
+
+UPDATE movies
+SET rated = 'PG'
+WHERE id = 32;
+
+UPDATE movies
+SET rated = 'R'
+WHERE id = 33;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 34;
+
+UPDATE movies
+SET rated = 'PG'
+WHERE id = 35;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 36;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 37;
+
+UPDATE movies
+SET rated = 'PG'
+WHERE id = 38;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 39;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 40;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 41;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 42;
+
+UPDATE movies
+SET rated = 'PG'
+WHERE id = 43;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 43;
