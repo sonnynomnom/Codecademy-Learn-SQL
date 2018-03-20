@@ -221,7 +221,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 ```sql
 ALTER TABLE movies
-ADD column_name rated;
+ADD rated String;
 
 UPDATE movies
 SET rated = 'PG-13'
@@ -401,4 +401,12 @@ WHERE id = 43;
 
 UPDATE movies
 SET rated = 'PG-13'
-WHERE id = 43;
+WHERE id = 44;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 45;
+
+UPDATE movies
+SET rated = 'R'
+WHERE id = 6;
