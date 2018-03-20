@@ -217,3 +217,107 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Standard Biergarten', 'Downtown', 'American', 4.0, '$$', 'A');
 ```
+
+
+```sql
+ALTER TABLE movies
+ADD column_name rated;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 1;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 2;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 3;
+
+;UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 4
+
+UPDATE movies
+SET rated = 'PG'
+WHERE id = 5;
+
+UPDATE movies
+SET rated = 'PG'
+WHERE id = 6;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 7;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 8;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 9;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 10;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 11;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 12;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 13;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 14;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 15;
+
+UPDATE movies
+SET rated = 'R'
+WHERE id = 16;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 17;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 18;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 19;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 20;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 21;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 22;
+
+UPDATE movies
+SET rated = 'PG-13'
+WHERE id = 23;
+
+UPDATE movies
+SET rated = 'PG'
+WHERE id = 24;
+
+Indiana Jones and the Kingdom of the Crystal Skull
+
