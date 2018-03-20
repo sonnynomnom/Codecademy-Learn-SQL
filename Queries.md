@@ -7,7 +7,7 @@ Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
 
 Add file: `touch sqlite3 union.sqlite`
 
-`./upload workspaces/sql_unit_2 --type:sql`
+Upload: `./upload workspaces/sql_unit_2 --type:sql`
 
 
 
