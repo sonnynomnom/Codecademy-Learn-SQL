@@ -30,6 +30,9 @@ SET genre = NULL
 WHERE name = 'Ali Wong: Baby Cobra';
 ```
 
+```sql
+DROP TABLE nomnom;
+```
 
 # Queries
 
