@@ -2,6 +2,7 @@
 
 ---
 
+./upload --workspace workspaces/learn-sql-baby-names/ --type sql
 
 Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
 
