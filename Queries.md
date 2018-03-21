@@ -102,11 +102,11 @@ FROM movies;"  > tmp.txt
 }
 
 
-## Project
+## Queries - Restaurants
 
-In this project, you will write queries to retrieve information from a table called `nomnom`, filled with Codecademy's favorite restaurants in NYC.
+We have put together a table of restaurants called `nomnom` and we need your help to answer some questions. Use the SQL commands you just learned and find the best dinner spots in the city.
 
-(the instructions provided are a general guideline; feel free to experiment writing your own queries.)
+Let's begin!
 
 ```sql
 
