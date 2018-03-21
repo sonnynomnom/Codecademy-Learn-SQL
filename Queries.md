@@ -221,7 +221,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 ```sql
 ALTER TABLE movies
-ADD rated String;
+ADD rated TEXT;
 
 UPDATE movies
 SET rated = 'PG-13'
