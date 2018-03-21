@@ -102,7 +102,7 @@ FROM movies;"  > tmp.txt
 }
 
 
-## Queries - Restaurants
+# Queries - Restaurants
 
 We have put together a table of restaurants called `nomnom` and we need your help to answer some questions. Use the SQL commands you just learned and find the best dinner spots in the city.
 
@@ -218,6 +218,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Standard Biergarten', 'Downtown', 'American', 4.0, '$$', 'A');
 ```
 
+## Adding `rated` Column in `CASE`
 
 ```sql
 ALTER TABLE movies
