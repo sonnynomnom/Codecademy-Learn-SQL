@@ -39,7 +39,7 @@ DROP TABLE StateNames;
 
 ```sql
 DELETE FROM NationalNames
-WHERE Year < 2000;
+WHERE Year < 2010;
 ```
 
 ```sql
@@ -49,7 +49,7 @@ DROP COLUMN Id;
 
 ```sql
 ALTER TABLE NationalNames
-RENAME TO names;
+RENAME TO baby;
 ```
 
 Dataset: https://www.kaggle.com/kaggle/us-baby-names/data  
