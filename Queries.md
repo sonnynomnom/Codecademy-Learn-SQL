@@ -411,3 +411,35 @@ WHERE id = 45;
 UPDATE movies
 SET rated = 'R'
 WHERE id = 6;
+```
+
+# Baby Names
+
+- Find the number of girls who were named Lillian for the full span of time of the database:
+
+```sql
+SELECT year, count
+FROM NationalNames
+WHERE name = 'Lillian' AND gender = 'F';
+```
+
+- Find the first 20 names from the year 2014 where 10 or less people have that name.
+
+```sql
+SELECT name
+FROM NationalNames
+WHERE year = '2014' AND count <= 10
+LIMIT 20;
+```
+
+- Find the first 20 distinct names that start with 'L':
+
+```sql
+
+- Rank Top 5 Female Name
+- Decade
+- Your friend has a twin named Bitly and Livly,
+
+
+
+
