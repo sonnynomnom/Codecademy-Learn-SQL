@@ -236,7 +236,7 @@ FROM NationalNames
 WHERE name = 'Lillian' AND gender = 'F';
 ```
 
-- Find the first 20 names from the year 2014 where 10 or less people have that name.
+- Find 20 names from the year 2014 where 10 or less people have that name.
 
 ```sql
 SELECT name
@@ -245,7 +245,7 @@ WHERE year = '2014' AND count <= 10
 LIMIT 20;
 ```
 
-- Find the first 20 distinct names that start with 'L':
+- Find 20 distinct names that start with 'L':
 
 ```sql
 SELECT DISTINCT name
@@ -254,8 +254,18 @@ WHERE name LIKE 'L%'
 LIMIT 20;
 ```
 
-- Rank Top 5 Female Name?
+- Top Names in 2016.
+
 - Decade?
+
+SELECT name
+FROM nationalnames
+WHERE year BETWEEN 2000 AND 2009
+ORDER BY count
+LIMIT 20;
+
+
+
 - Your friend has a twin named Bitly and Livly, find a name that ends with "ly".
 
 
