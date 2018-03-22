@@ -220,9 +220,13 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 # Baby Names
 
-Dataset: https://www.kaggle.com/kaggle/us-baby-names/data
-Example: https://www.kaggle.com/kostdiek/us-baby-names-with-sql-python
-SSA: https://www.ssa.gov/OACT/babynames/
+Dataset: https://www.kaggle.com/kaggle/us-baby-names/data  
+
+`Id`, `Name`, `Year`, `Gender`, `Count`
+
+Example: https://www.kaggle.com/kostdiek/us-baby-names-with-sql-python  
+
+SSA: https://www.ssa.gov/OACT/babynames/  
 
 - Find the number of girls who were named Lillian for the full span of time of the database:
 
