@@ -43,6 +43,11 @@ WHERE Year < 2014;
 ```
 
 ```sql
+DELETE FROM NationalNames
+WHERE Count < 50;
+```
+
+```sql
 ALTER TABLE NationalNames
 DROP COLUMN Id;
 ```
