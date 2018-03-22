@@ -39,7 +39,7 @@ DROP TABLE StateNames;
 
 ```sql
 DELETE FROM NationalNames
-WHERE Year < 2010;
+WHERE Year < 2014;
 ```
 
 ```sql
