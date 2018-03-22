@@ -240,10 +240,15 @@ LIMIT 20;
 - Find the first 20 distinct names that start with 'L':
 
 ```sql
+SELECT DISTINCT name
+FROM NationalNames
+WHERE name LIKE 'L%'
+LIMIT 20;
+```
 
-- Rank Top 5 Female Name
-- Decade
-- Your friend has a twin named Bitly and Livly,
+- Rank Top 5 Female Name?
+- Decade?
+- Your friend has a twin named Bitly and Livly, find a name that ends with "ly".
 
 
 
