@@ -220,6 +220,10 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 # Baby Names
 
+Dataset: https://www.kaggle.com/kaggle/us-baby-names/data
+Example: https://www.kaggle.com/kostdiek/us-baby-names-with-sql-python
+SSA: https://www.ssa.gov/OACT/babynames/
+
 - Find the number of girls who were named Lillian for the full span of time of the database:
 
 ```sql
@@ -249,7 +253,5 @@ LIMIT 20;
 - Rank Top 5 Female Name?
 - Decade?
 - Your friend has a twin named Bitly and Livly, find a name that ends with "ly".
-
-
 
 
