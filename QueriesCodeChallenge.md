@@ -38,24 +38,26 @@ DROP TABLE StateNames;
 ```
 
 ```sql
+ALTER TABLE NationalNames
+RENAME TO baby;
+```
+
+```sql
 DELETE FROM NationalNames
 WHERE Year < 2014;
 ```
 
 ```sql
-DELETE FROM NationalNames
-WHERE Count < 50;
+DELETE FROM baby
+WHERE Count < 200;
 ```
 
+Drop column id!
 ```sql
 ALTER TABLE NationalNames
 DROP COLUMN Id;
 ```
 
-```sql
-ALTER TABLE NationalNames
-RENAME TO baby;
-```
 
 Dataset: https://www.kaggle.com/kaggle/us-baby-names/data  
 
