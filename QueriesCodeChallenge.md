@@ -49,7 +49,7 @@ WHERE Year < 2014;
 
 ```sql
 DELETE FROM baby
-WHERE Count < 200;
+WHERE Count < 500;
 ```
 
 Delete column `Id`:
