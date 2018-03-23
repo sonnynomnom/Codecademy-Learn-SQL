@@ -52,6 +52,15 @@ DELETE FROM baby
 WHERE Count < 200;
 ```
 
+
+```sql
+CREATE TABLE babies (name TEXT, year INTEGER, gender TEXT, number INTEGER);
+```
+
+```sql
+INSERT INTO babies SELECT Id, Name, Year, Gender, Count FROM baby;
+```
+
 Drop column id!
 ```sql
 ALTER TABLE NationalNames
