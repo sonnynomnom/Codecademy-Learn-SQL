@@ -52,19 +52,18 @@ DELETE FROM baby
 WHERE Count < 200;
 ```
 
+Delete column `Id`:
 
 ```sql
 CREATE TABLE babies (name TEXT, year INTEGER, gender TEXT, number INTEGER);
 ```
 
 ```sql
-INSERT INTO babies SELECT Id, Name, Year, Gender, Count FROM baby;
+INSERT INTO babies SELECT Name, Year, Gender, Count FROM baby;
 ```
 
-Drop column id!
 ```sql
-ALTER TABLE NationalNames
-DROP COLUMN Id;
+DROP TABLE baby;
 ```
 
 
