@@ -216,6 +216,8 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Los Hermanos', 'Brooklyn', 'Mexican', 4.4, '$', NULL);
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('The Standard Biergarten', 'Downtown', 'American', 4.0, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Ootoya', 'Downtown', 'Japanese', 4.5, '$$', 'A');
 ```
 
 ## Adding `rated` Column in `CASE`
