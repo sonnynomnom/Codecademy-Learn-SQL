@@ -1,7 +1,5 @@
 # Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 
-# Research
-
 ## Data/Marketing Analyst
 
 **Nick Palumbo - 3/20/2018**
@@ -24,7 +22,7 @@ Joins are essential for getting the information I need that came from different 
 
 **Where did you learn SQL?**
 
-I learned SQL from an EdX class called "Sabermetrics 101: Introduction to Baseball Analytics".
+I learned SQL from an EdX class called "Sabermetrics 101: Introduction to Baseball Analytics (https://www.edx.org/course/sabermetrics-101-introduction-baseball-bux-sabr101x-0)".
 
 Are there any datasets that you found interesting or loved working with? Or ones you dislike.
 
