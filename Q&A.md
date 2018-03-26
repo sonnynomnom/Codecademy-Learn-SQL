@@ -4,7 +4,7 @@
 
 **Nick Palumbo - 3/20/2018**
 
-I currently work at MTD Products as a data analyst, responsible for creating visualizations and building predictive models. Before I started this job, I was a marketing analyst at Medical Mutual of Ohio.
+I currently work at [MTD Products](http://www.mtdproducts.com/) as a data analyst, responsible for creating visualizations and building predictive models. Before I started this job, I was a marketing analyst at [Medical Mutual of Ohio](https://www.medmutual.com/).
 
 **How do you use SQL in your day-to-day job?**
 
