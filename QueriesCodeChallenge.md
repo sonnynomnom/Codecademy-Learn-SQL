@@ -35,7 +35,7 @@ SET genre = NULL
 WHERE name = 'Ali Wong: Baby Cobra';
 ```
 
-# Baby Names
+# Baby Names 👶🏼
 
 ```sql
 DROP TABLE StateNames;
@@ -119,7 +119,7 @@ LIMIT 20;
 - Your friend has a twin named Bitly and Livly, find a name that ends with "ly".
 
 
-
+# Restaurants 🍱
 
 ```sql
 CREATE TABLE nomnom(name TEXT, neighborhood TEXT, cuisine TEXT, review INTEGER, price TEXT, health TEXT);
@@ -142,7 +142,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 ```
 
 
-# Newspaper Headlines
+# News Headlines 🗞
 
 ```py
 import pandas as pd
