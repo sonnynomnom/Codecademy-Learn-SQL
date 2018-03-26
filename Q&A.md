@@ -2,7 +2,7 @@
 
 # Research
 
-## Interview with Data/Marketing Analyst
+## Data/Marketing Analyst
 
 **Nick Palumbo - 3/20/2018**
 
