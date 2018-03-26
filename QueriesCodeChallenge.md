@@ -159,3 +159,5 @@ f2[:1000]
 
 f2.to_csv("headlines.csv", index=False)
 ```
+
+f2 = f2.rename(columns={'ID': 'id', 'TITLE': 'title', 'URL': 'url', 'PUBLISHER': 'publisher', 'CATEGORY': 'category"
