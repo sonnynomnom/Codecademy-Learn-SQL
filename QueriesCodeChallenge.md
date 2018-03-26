@@ -138,6 +138,8 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 ```
 
 
+# Newspaper Headlines
+
 ```py
 import pandas as pd
 
@@ -156,7 +158,8 @@ new_f.to_csv("newFile.csv", index=False)
 f2 = pd.read_csv("/Users/sonny/Desktop/newFile.csv")
 ```
 
-lowercase columns
+lowercase column names:
+
 ```py
 f2.columns = [x.lower() for x in f2.columns]
 ```
@@ -170,7 +173,7 @@ f2 = f2[['id', 'title', 'publisher', 'category', 'timestamp', 'url']]
 only take 1000 rows:
 
 ```py
-f2[:1000]
+f2 = f2[:1000]
 ```
 
 ```py
