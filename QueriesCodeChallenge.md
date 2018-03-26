@@ -115,3 +115,44 @@ LIMIT 20;
 - Your friend has a twin named Bitly and Livly, find a name that ends with "ly".
 
 
+
+
+```sql
+CREATE TABLE nomnom(name TEXT, neighborhood TEXT, cuisine TEXT, review INTEGER, price TEXT, health TEXT);
+
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Peter Luger Steak House', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jongro BBQ', 'Midtown', 'Korean', 4.5, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Pocha 32', 'Midtown', 'Korean', 4.0, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nom Wah Tea Parlor', 'Chinatown', 'Chinese', 4.2, '$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roberta''s', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Speedy Romeo', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+
+INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Bunna Cafe', 'Brooklyn', 'Ethiopian', 4.6, '$$', 'A');
+
+```
+
+
+```py
+import pandas as pd
+
+f = pd.read_csv("/Users/sonny/Desktop/uci-news-aggregator.csv")
+
+keep_col = ['ID', 'TITLE', 'URL', 'PUBLISHER', 'CATEGORY', 'TIMESTAMP']
+
+new_f = f[keep_col]
+new_f.to_csv("newFile.csv", index=False)
+```
+
+422417 x 6
+
+```py
+f2 = pd.read_csv("/Users/sonny/Desktop/uci-news-aggregator.csv")
+f2[:1000]
+f2.to_csv("headlines.csv", index=False)
+```
