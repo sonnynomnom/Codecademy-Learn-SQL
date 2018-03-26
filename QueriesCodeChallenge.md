@@ -146,6 +146,7 @@ f = pd.read_csv("/Users/sonny/Desktop/uci-news-aggregator.csv")
 keep_col = ['ID', 'TITLE', 'URL', 'PUBLISHER', 'CATEGORY', 'TIMESTAMP']
 
 new_f = f[keep_col]
+
 new_f.to_csv("newFile.csv", index=False)
 ```
 
@@ -153,6 +154,8 @@ new_f.to_csv("newFile.csv", index=False)
 
 ```py
 f2 = pd.read_csv("/Users/sonny/Desktop/uci-news-aggregator.csv")
+
 f2[:1000]
+
 f2.to_csv("headlines.csv", index=False)
 ```
