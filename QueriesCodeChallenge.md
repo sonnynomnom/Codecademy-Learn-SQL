@@ -179,3 +179,25 @@ f2 = f2[:1000]
 ```py
 f2.to_csv("headlines.csv", index=False)
 ```
+
+```bash
+cd Desktop
+touch db.sqlite
+sqlite3 db
+
+sqlite> CREATE TABLE headlines (
+   'id' INTEGER,
+   'title' TEXT,
+   'publisher' TEXT,
+   'category' TEXT,
+   'timestampe' TEXT,
+   'url' DATETIME
+   );
+   
+.mode csv
+
+.import /Users/sonny/Desktop/headlines.csv headlines
+ 
+.schema
+```
+
