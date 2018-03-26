@@ -18,7 +18,7 @@ For instance:
 
 **What is a concept in SQL that's essential to marketing?**
 
-Joins are essential for getting the information I need that came from different processes, but CASE WHEN is also very important, as it allows you to create flags for the end user to answer their questions about how the data breaks down.
+Joins are essential for getting the information I need that came from different processes, but `CASE WHEN` is also very important, as it allows you to create flags for the end user to answer their questions about how the data breaks down.
 
 **Where did you learn SQL?**
 
