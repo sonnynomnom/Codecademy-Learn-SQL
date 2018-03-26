@@ -2,7 +2,7 @@
 
 ## Data/Marketing Analyst
 
-**Nick Palumbo - 3/20/2018**
+**Nick Palumbo**
 
 I currently work at [MTD Products](http://www.mtdproducts.com/) as a data analyst, responsible for creating visualizations and building predictive models. Before I started this job, I was a marketing analyst at [Medical Mutual of Ohio](https://www.medmutual.com/).
 
@@ -22,8 +22,10 @@ Joins are essential for getting the information I need that came from different 
 
 **Where did you learn SQL?**
 
-I learned SQL from an EdX class called [Sabermetrics 101: Introduction to Baseball Analytics] (https://www.edx.org/course/sabermetrics-101-introduction-baseball-bux-sabr101x-0).
+I learned SQL from an EdX class called [Sabermetrics 101: Introduction to Baseball Analytics](https://www.edx.org/course/sabermetrics-101-introduction-baseball-bux-sabr101x-0).
 
-Are there any datasets that you found interesting or loved working with? Or ones you dislike.
+**Are there any datasets that you particularly found interesting or enjoyed working with?**
 
 I like the mtcars (Motor Trend Car Road Tests) dataset used in R, but I especially liked using the Lahman Baseball Database. It is a great tool for seeing how you can use joins and calculated fields to answer questions that are typically posed in the real world.
+
+*3/20/2018*
