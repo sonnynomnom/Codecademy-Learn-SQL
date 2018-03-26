@@ -185,7 +185,7 @@ cd Desktop
 touch db.sqlite
 sqlite3 db
 
-sqlite> CREATE TABLE headlines (
+sqlite> CREATE TABLE news (
    'id' INTEGER,
    'title' TEXT,
    'publisher' TEXT,
