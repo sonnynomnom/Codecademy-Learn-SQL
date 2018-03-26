@@ -1,8 +1,10 @@
 # Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 
-# Q&A
+# Research
 
-Nick Palumbo - 3/20/2018
+## Interview with Data/Marketing Analyst
+
+**Nick Palumbo - 3/20/2018**
 
 I currently work at MTD Products as a data analyst, responsible for creating visualizations and building predictive models. Before I started this job, I was a marketing analyst at Medical Mutual of Ohio.
 
