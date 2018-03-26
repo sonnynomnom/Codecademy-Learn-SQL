@@ -196,7 +196,7 @@ sqlite> CREATE TABLE news (
    
 .mode csv
 
-.import /Users/sonny/Desktop/headlines.csv headlines
+.import /Users/sonny/Desktop/headlines.csv news
  
 .schema
 ```
