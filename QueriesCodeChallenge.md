@@ -154,13 +154,25 @@ new_f.to_csv("newFile.csv", index=False)
 
 ```py
 f2 = pd.read_csv("/Users/sonny/Desktop/newFile.csv")
-
-f2[:1000]
-
-f2.to_csv("headlines.csv", index=False)
 ```
 
 lowercase columns
 ```py
 f2.columns = [x.lower() for x in f2.columns]
+```
+
+move `url` to the right:
+
+```py
+f2 = f2[['id', 'title', 'publisher', 'category', 'timestamp', 'url']]
+```
+
+only take 1000 rows:
+
+```py
+f2[:1000]
+```
+
+```py
+f2.to_csv("headlines.csv", index=False)
 ```
