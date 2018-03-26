@@ -153,7 +153,7 @@ new_f.to_csv("newFile.csv", index=False)
 422417 x 6
 
 ```py
-f2 = pd.read_csv("/Users/sonny/Desktop/uci-news-aggregator.csv")
+f2 = pd.read_csv("/Users/sonny/Desktop/newFile.csv")
 
 f2[:1000]
 
