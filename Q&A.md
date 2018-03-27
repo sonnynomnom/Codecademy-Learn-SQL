@@ -11,9 +11,9 @@ I use SQL to access customer records that meet certain qualifications.
 
 For instance:
 
-- How many customers do we have from online orders in the last 4 weeks?
-- How many of our call center customers gave us a valid first name?
-- How many of them gave us a last name of 'Unknown', 'N/A', or '.'?
+- *How many customers do we have from online orders in the last 4 weeks?*
+- *How many of our call center customers gave us a valid first name?*
+- *How many of them gave us a last name of 'Unknown', 'N/A', or '.'?*
 
 **What is a concept in SQL that's essential to marketing?**
 
