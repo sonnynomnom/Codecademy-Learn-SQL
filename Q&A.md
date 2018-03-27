@@ -59,9 +59,7 @@ I love working with technology and am passionate about automating everything I p
 
 **Are there any datasets that you particularly found interesting or enjoyed working with?**
 
-A majority of the data we work with is specific to our clients' advertising efforts, pulled directly from Adwords, Bing, Facebook, and Doubleclick APIs. I've found it particularly fun to pair these advertising insights with geo data sources ([Google Maps API](https://developers.google.com/maps/), [OpenWeather API](https://openweathermap.org/api), US Census, Store Locations, etc.) to see how all of these factors can impact marketing efficiency in each region.
-
-Additionally, I've had a blast using the Instagram and Twitter APIs to pull post interactions from top influencers for our brands to understand how their posts ultimately drive up searches, site visits, and purchases.
+A majority of the data we work with is specific to our clients' advertising efforts, pulled directly from Adwords, Bing, Facebook, and Doubleclick APIs. I've found it particularly fun to pair these advertising insights with geo data sources ([Google Maps API](https://developers.google.com/maps/), [OpenWeather API](https://openweathermap.org/api), US Census, Store Locations, etc.) to see how all of these factors can impact marketing efficiency in each region. Additionally, I've had a blast using the Instagram and Twitter APIs to pull post interactions from top influencers for our brands to understand how their posts ultimately drive up searches, site visits, and purchases.
 
 **What's next?**
 
