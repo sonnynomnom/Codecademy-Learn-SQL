@@ -77,7 +77,7 @@ Currently working on an enterprise agile application development team eliciting 
 
 Querying data from multiple sources to identify trends in product usage, potential data mismatches, verifying the presence and/or authenticity of available data.
 
-**What is a concept in SQL that's essential to you?**
+**What is a concept in SQL that's essential to requirment analysis?**
 
 `JOIN`s. Without mastering joins I would not be able to piece data together in a meaningful manner.
 
