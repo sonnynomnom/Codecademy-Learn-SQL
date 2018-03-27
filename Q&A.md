@@ -81,7 +81,7 @@ Querying data from multiple sources to identify trends in product usage, potenti
 
 **What is a concept in SQL that's essential to you?**
 
-Joins. Without mastering joins I would not be able to piece data together in a meaningful manner.
+`JOIN`s. Without mastering joins I would not be able to piece data together in a meaningful manner.
 
 **Where did you learn SQL?**
 
