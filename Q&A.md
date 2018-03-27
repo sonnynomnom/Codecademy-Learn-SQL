@@ -71,7 +71,7 @@ I want to dive deeper with Python, especially with data science packages like pa
 
 ---
 
-**Jacob Inurrigarro - Business Systems Analyst**
+### Jacob Inurrigarro - Business Systems Analyst ###
 
 Currently working on an enterprise agile application development team eliciting business process needs from the business and then translating them into functional and non-functional requirements. (Health Fitness Corporation)
 
@@ -90,4 +90,4 @@ I was first exposed to SQL in college, learned a bit more from the W3Schools, an
 **Are there any datasets that you particularly found interesting or enjoyed working with?**
 On the idea of finding relatable and practical data--as a home owner in Texas that fears rising property taxes, I learned how to collect and analyze my county's GIS data. Armed with SQL, I am now better equipped at protesting my property taxes.
 
-3/26/2018
+3/27/2018
