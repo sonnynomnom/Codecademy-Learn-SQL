@@ -57,10 +57,6 @@ It's also extremely important to get comfortable with long sub-queries. They're 
 
 I love working with technology and am passionate about automating everything I possibly can. Once I found that I could use large data sets to automate our decision making processes, I was hooked.
 
-**Where did you learn SQL?**
-
-I learned the basics from [SQLZOO](https://sqlzoo.net/) and from there, started playing around with our company's own data sets. Anything new I learn now is from scouring the documentation.
-
 **Are there any datasets that you particularly found interesting or enjoyed working with?**
 
 A majority of the data we work with is specific to our clients' advertising efforts, pulled directly from Adwords, Bing, Facebook, and Doubleclick APIs. I've found it particularly fun to pair these advertising insights with geo data sources (Google Maps API, OpenWeather API, US Census, Store Locations, etc.) to see how all of these factors can impact marketing efficiency in each region.
