@@ -58,14 +58,17 @@ It's also extremely important to get comfortable with long sub-queries. They're 
 I love working with technology and am passionate about automating everything I possibly can. Once I found that I could use large data sets to automate our decision making processes, I was hooked.
 
 **Where did you learn SQL?**
-I learned the basics from sqlzoo and from there, started playing around with our company's own data sets. Anything new I learn now is from scouring the documentation.
+
+I learned the basics from [SQLZOO](https://sqlzoo.net/) and from there, started playing around with our company's own data sets. Anything new I learn now is from scouring the documentation.
 
 **Are there any datasets that you particularly found interesting or enjoyed working with?**
+
 A majority of the data we work with is specific to our clients' advertising efforts, pulled directly from Adwords, Bing, Facebook, and Doubleclick APIs. I've found it particularly fun to pair these advertising insights with geo data sources (Google Maps API, OpenWeather API, US Census, Store Locations, etc.) to see how all of these factors can impact marketing efficiency in each region.
 
 Additionally, I've had a blast using the Instagram and Twitter APIs to pull post interactions from top influencers for our brands to understand how their posts ultimately drive up searches, site visits, and purchases.
 
-**What to learn next?**
+**What's next?**
+
 I want to dive deeper with Python, especially with data science packages like pandas, numpy, etc. and machine learning packages (like scikit-learn, tensorflow, pytorch). I have a basic level of knowledge right now and can write fully operational scripts, but I don't know the ins-and-outs by heart.
 
 *3/26/2018*
@@ -74,7 +77,7 @@ I want to dive deeper with Python, especially with data science packages like pa
 
 ### Jacob Inurrigarro - Business Systems Analyst ###
 
-Currently working on an enterprise agile application development team eliciting business process needs from the business and then translating them into functional and non-functional requirements. (Health Fitness Corporation)
+Currently working on an enterprise agile application development team eliciting business process needs from the business and then translating them into functional and non-functional requirements. ([Health Fitness Corporation](http://healthfitness.com/))
 
 **How do you use SQL in your day-to-day job?**
 
@@ -93,4 +96,4 @@ On the idea of finding relatable and practical data--as a home owner in Texas th
 
 3/27/2018
 
-Also, thank you to folks at subreddit /r/SQL fo the love.
+Also, thank you to folks at subreddit [/r/SQL](https://www.reddit.com/r/SQL/) fo the love.
