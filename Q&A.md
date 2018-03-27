@@ -73,7 +73,7 @@ I want to dive deeper with Python, especially with data science packages like pa
 
 ### Jacob Inurrigarro - Business Systems Analyst ###
 
-Currently working on an enterprise agile application development team eliciting business process needs from the business and then translating them into functional and non-functional requirements. ([Health Fitness Corporation](http://healthfitness.com/))
+Currently working on an enterprise agile application development team eliciting business process needs from the company and then translating them into functional and non-functional requirements. ([Health Fitness Corporation](http://healthfitness.com/))
 
 **How do you use SQL in your day-to-day job?**
 
