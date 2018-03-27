@@ -1,6 +1,6 @@
 # Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 
-# Q&A with 3 Data Analysts!
+# SQL with Three Analysts!
 
 ### Nick Palumbo - Data Analyst ###
 
