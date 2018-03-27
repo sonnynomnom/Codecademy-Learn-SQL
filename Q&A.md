@@ -91,3 +91,5 @@ I was first exposed to SQL in college, learned a bit more from the W3Schools, an
 On the idea of finding relatable and practical data--as a home owner in Texas that fears rising property taxes, I learned how to collect and analyze my county's GIS data. Armed with SQL, I am now better equipped at protesting my property taxes.
 
 3/27/2018
+
+Also, thank you to folks at subreddit /r/SQL fo the love.
