@@ -26,7 +26,7 @@ I learned SQL from an EdX class called [Sabermetrics 101: Introduction to Baseba
 
 **Are there any datasets that you particularly found interesting or enjoyed working with?**
 
-I like the [mtcars](https://www.rdocumentation.org/packages/datasets/versions/3.4.3/topics/mtcars) (Motor Trend Car Road Tests) dataset used in R, but I especially liked using the Lahman Baseball Database. It is a great tool for seeing how you can use joins and calculated fields to answer questions that are typically posed in the real world.
+I like the [mtcars](https://www.rdocumentation.org/packages/datasets/versions/3.4.3/topics/mtcars) (Motor Trend Car Road Tests) dataset used in R, but I especially liked using the [Lahman Baseball Database](http://www.seanlahman.com/baseball-archive/statistics/). It is a great tool for seeing how you can use joins and calculated fields to answer questions that are typically posed in the real world.
 
 *3/20/2018*
 
