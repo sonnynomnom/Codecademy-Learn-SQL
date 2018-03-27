@@ -65,7 +65,7 @@ Additionally, I've had a blast using the Instagram and Twitter APIs to pull post
 
 **What's next?**
 
-I want to dive deeper with Python, especially with data science packages like pandas, numpy, etc. and machine learning packages (like scikit-learn, tensorflow, pytorch). I have a basic level of knowledge right now and can write fully operational scripts, but I don't know the ins-and-outs by heart.
+I want to dive deeper with Python, especially with data science packages like matplotlib, NumPy, pandas, and machine learning packages (like scikit-learn, TensorFlow, PyTorch). I have a basic level of knowledge right now and can write fully operational scripts, but I don't know the ins-and-outs by heart.
 
 *3/26/2018*
 
