@@ -32,7 +32,7 @@ I like the [mtcars](https://www.rdocumentation.org/packages/datasets/versions/3.
 
 --- 
 
-### Blake Burch / Data Innovation Lead, PMG 📱 ###
+### Blake Burch | Data Innovation Lead, PMG 📱 ###
 
 I lead up the Data Innovation team at [PMG: Digital Marketing Agency](https://www.pmg.com/) to develop automation and algorithms for our top-tier brands.
 
@@ -69,7 +69,7 @@ I want to dive deeper with Python, especially with data science packages like ma
 
 ---
 
-### Jacob Inurrigarro / Business Systems Analyst, Health Fitness 💪🏼 ###
+### Jacob Inurrigarro | Business Systems Analyst, Health Fitness 💪🏼 ###
 
 Currently working on an enterprise agile application development team eliciting business process needs from the company and then translating them into functional and non-functional requirements. ([Health Fitness Corporation](http://healthfitness.com/))
 
