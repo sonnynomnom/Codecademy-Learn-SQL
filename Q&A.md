@@ -93,4 +93,6 @@ On the idea of finding relatable and practical data - as a home owner in Texas t
 
 *3/27/2018*
 
+---
+
 Also, thank you to folks at subreddit [/r/SQL](https://www.reddit.com/r/SQL/) fo the love.
