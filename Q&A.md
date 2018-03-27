@@ -85,7 +85,7 @@ Querying data from multiple sources to identify trends in product usage, potenti
 
 **Where did you learn SQL?**
 
-I was first exposed to SQL in college, learned a bit more from the W3Schools, and continue to learn from on-the-job training. The coding examples from the [W3Schools](https://www.w3schools.com/) were a big help but without something practical to relate the data to some concepts just did not click for me. Now that I have come a bit further working in the abstract isn't so bad. I really wish [Codecademy](https://www.codecademy.com/) was around when I was learning SQL as it's approach would have been a huge boon: tutorials on the left, code engine in the center, and output/schema on the right.
+I was first exposed to SQL in college, learned a bit more from the [W3Schools](https://www.w3schools.com/), and continue to learn from on-the-job training. The coding examples from the W3Schools were a big help but without something practical to relate the data to some concepts just did not click for me. Now that I have come a bit further working in the abstract isn't so bad. I really wish [Codecademy](https://www.codecademy.com/) was around when I was learning SQL as it's approach would have been a huge boon: tutorials on the left, code engine in the center, and output/schema on the right.
 
 **Are there any datasets that you particularly found interesting or enjoyed working with?**
 
