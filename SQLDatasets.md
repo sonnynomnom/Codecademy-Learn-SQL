@@ -49,16 +49,14 @@ NY-Based Companies
 - **Kickstarter** (press@kickstarter.com)
 - **Venmo** (press@venmo.com)
 - **OkCupid** (press@okcupid.com)
-- 
-- Seamless 
-New York Post
+- Seamless
+- New York Post
 - FreshDirect
 - Etsy
 - Squarespace
 - Compass
 - Justworks
 - Vimeo
-- Zerocater
 - opendata.cityofnewyork.us
 
 Best
