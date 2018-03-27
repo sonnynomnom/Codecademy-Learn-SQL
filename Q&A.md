@@ -1,8 +1,8 @@
 # Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 
-# How do you use SQL with 3 Analysts!
+# How do you use SQL?
 
-### Nick Palumbo / Data Analyst, MTD Products 🚜 ###
+### Nick Palumbo | Data Analyst, MTD Products 🚜 ###
 
 I currently work at [MTD Products](http://www.mtdproducts.com/) as a data analyst, responsible for creating visualizations and building predictive models. Before I started this job, I was a marketing analyst at [Medical Mutual of Ohio](https://www.medmutual.com/).
 
