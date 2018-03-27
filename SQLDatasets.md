@@ -32,6 +32,8 @@ Eugene forward email
 
 - The Met 				#analyst
 - Twitch (Zach) 			#analyst
+- Kickstarter (press@codecademy.com)
+
 - Meetup (Sonny/Catherine) 	#business
 - Airbnb (Catherine)
 - Wall Street Journal (headlines)
@@ -40,8 +42,6 @@ Eugene forward email
 - Spotify
 - Netflix
 - The New Yorker
-- Kickstarter (busines/marketing/analyst)
-
 
 - Seamless
 
