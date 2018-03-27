@@ -85,10 +85,11 @@ Joins. Without mastering joins I would not be able to piece data together in a m
 
 **Where did you learn SQL?**
 
-I was first exposed to SQL in college, learned a bit more from the W3Schools, and continue to learn from on-the-job training. The coding examples from the W3Schools were a big help but without something practical to relate the data to some concepts just did not click for me. Now that I have come a bit further working in the abstract isn't so bad. I really wish Codecademy was around when I was learning SQL as it's approach would have been a huge boon: tutorials/helper text on the left, code engine in the center, and output/schema on the right.
+I was first exposed to SQL in college, learned a bit more from the W3Schools, and continue to learn from on-the-job training. The coding examples from the [W3Schools](https://www.w3schools.com/) were a big help but without something practical to relate the data to some concepts just did not click for me. Now that I have come a bit further working in the abstract isn't so bad. I really wish [Codecademy](https://www.codecademy.com/) was around when I was learning SQL as it's approach would have been a huge boon: tutorials on the left, code engine in the center, and output/schema on the right.
 
 **Are there any datasets that you particularly found interesting or enjoyed working with?**
-On the idea of finding relatable and practical data--as a home owner in Texas that fears rising property taxes, I learned how to collect and analyze my county's GIS data. Armed with SQL, I am now better equipped at protesting my property taxes.
+
+On the idea of finding relatable and practical data - as a home owner in Texas that fears rising property taxes, I learned how to collect and analyze my county's GIS data. Armed with SQL, I am now better equipped at protesting my property taxes.
 
 *3/27/2018*
 
