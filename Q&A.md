@@ -4,7 +4,7 @@
 
 ### Nick Palumbo ###
 
-**Data Analyst, MTD Products 🚜 **
+**Data Analyst, MTD Products** 🚜
 
 I currently work at [MTD Products](http://www.mtdproducts.com/) as a data analyst, responsible for creating visualizations and building predictive models. Before I started this job, I was a marketing analyst at [Medical Mutual of Ohio](https://www.medmutual.com/).
 
