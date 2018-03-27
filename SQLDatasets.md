@@ -47,6 +47,7 @@ Eugene forward email
 NY-Based Companies
 
 - **Kickstarter** (press@kickstarter.com)
+- **Venmo** (press@venmo.com)
 - **OkCupid** (press@okcupid.com)
 - 
 - Seamless 
