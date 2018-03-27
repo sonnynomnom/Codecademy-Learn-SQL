@@ -93,4 +93,4 @@ On the idea of finding relatable and practical data - as a home owner in Texas t
 
 ---
 
-Also, thank you to folks at subreddit [/r/SQL](https://www.reddit.com/r/SQL/) fo the love.
+Also, thank you to folks at subreddit [/r/SQL](https://www.reddit.com/r/SQL/) for the love.
