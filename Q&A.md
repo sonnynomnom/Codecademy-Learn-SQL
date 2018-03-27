@@ -34,12 +34,12 @@ I like the [mtcars](https://www.rdocumentation.org/packages/datasets/versions/3.
 
 ### Blake Burch - Data Innovation Lead ###
 
-Where do you work?
-PMG - A Digital Marketing Agency. I lead up our Data Innovation team to develop automation and algorithms for our top-tier brands.
+I lead up the Data Innovation team at [PMG: Digital Marketing Agency](https://www.pmg.com/) to develop automation and algorithms for our top-tier brands.
 
 **How do you use SQL in your day-to-day job?**
 
 I use SQL to:
+
 - Power automated reports/dashboards
 - Create calculations for ongoing bidding/budgeting decisions
 - Power the logic that generates bulk upload sheets for teams
