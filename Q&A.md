@@ -29,6 +29,8 @@ I like the mtcars (Motor Trend Car Road Tests) dataset used in R, but I especial
 
 *3/20/2018*
 
+--- 
+
 ### Blake Burch - Data Innovation Lead ###
 
 Where do you work?
@@ -50,6 +52,10 @@ Window functions put you leagues ahead and reduce the amount of SQL you have to 
 `CASE` statements are used all of the time to help classify our data into segments for client goals and strategies.
 It's also extremely important to get comfortable with long sub-queries. They're a necessary evil to format the data in the best way possible.
 
+**What got you into the data field?**
+
+I love working with technology and am passionate about automating everything I possibly can. Once I found that I could use large data sets to automate our decision making processes, I was hooked.
+
 **Where did you learn SQL?**
 I learned the basics from sqlzoo and from there, started playing around with our company's own data sets. Anything new I learn now is from scouring the documentation.
 
@@ -57,5 +63,8 @@ I learned the basics from sqlzoo and from there, started playing around with our
 A majority of the data we work with is specific to our clients' advertising efforts, pulled directly from Adwords, Bing, Facebook, and Doubleclick APIs. I've found it particularly fun to pair these advertising insights with geo data sources (Google Maps API, OpenWeather API, US Census, Store Locations, etc.) to see how all of these factors can impact marketing efficiency in each region.
 
 Additionally, I've had a blast using the Instagram and Twitter APIs to pull post interactions from top influencers for our brands to understand how their posts ultimately drive up searches, site visits, and purchases.
+
+**What to learn next?**
+I want to dive deeper with Python, especially with data science packages like pandas, numpy, etc. and machine learning packages (like scikit-learn, tensorflow, pytorch). I have a basic level of knowledge right now and can write fully operational scripts, but I don't know the ins-and-outs by heart.
 
 *3/26/2018*
