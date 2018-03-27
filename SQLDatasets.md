@@ -42,8 +42,6 @@ Eugene forward email
 - Netflix
 - The New Yorker
 
-- Seamless
-
 NY-Based Companies
 
 - **Kickstarter** (press@kickstarter.com)
