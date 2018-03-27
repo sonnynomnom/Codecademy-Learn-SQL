@@ -32,13 +32,12 @@ Eugene forward email
 
 - The Met 				#analyst
 - Twitch (Zach) 			#analyst
-- Kickstarter (press@codecademy.com)
+- **Kickstarter** (press@codecademy.com)
 
 - Meetup (Sonny/Catherine) 	#business
-- Airbnb (Catherine)
+- **Airbnb** (Catherine) (contact.press@airbnb.com)
 - Wall Street Journal (headlines)
 - The New York Times (headlines)
-- OkCupid
 - Spotify
 - Netflix
 - The New Yorker
@@ -47,7 +46,10 @@ Eugene forward email
 
 NY-Based Companies
 
-- Seamless
+- **Kickstarter** (press@kickstarter.com)
+- **OkCupid** (press@okcupid.com)
+- 
+- Seamless 
 New York Post
 - FreshDirect
 - Etsy
