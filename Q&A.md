@@ -1,6 +1,6 @@
 # Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 
-# SQL with Three Analysts!
+# How do you use SQL with 3 Analysts!
 
 ### Nick Palumbo / Data Analyst, MTD Products 🚜 ###
 
