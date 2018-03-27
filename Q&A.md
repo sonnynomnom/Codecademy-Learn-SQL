@@ -1,8 +1,7 @@
 # Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 
-## Data/Marketing Analyst
 
-**Nick Palumbo**
+### Nick Palumbo - Data Analyst ###
 
 I currently work at [MTD Products](http://www.mtdproducts.com/) as a data analyst, responsible for creating visualizations and building predictive models. Before I started this job, I was a marketing analyst at [Medical Mutual of Ohio](https://www.medmutual.com/).
 
@@ -30,7 +29,7 @@ I like the mtcars (Motor Trend Car Road Tests) dataset used in R, but I especial
 
 *3/20/2018*
 
-**Blake Burch**
+### Blake Burch - Data Innovation Lead ###
 
 Where do you work?
 PMG - A Digital Marketing Agency. I lead up our Data Innovation team to develop automation and algorithms for our top-tier brands.
