@@ -18,7 +18,7 @@ For instance:
 
 **What is a concept in SQL that's essential to marketing?**
 
-Joins are essential for getting the information I need that came from different processes, but `CASE WHEN` is also very important, as it allows you to create flags for the end user to answer their questions about how the data breaks down.
+`JOIN`s are essential for getting the information I need that came from different processes, but `CASE WHEN` is also very important, as it allows you to create flags for the end user to answer their questions about how the data breaks down.
 
 **Where did you learn SQL?**
 
@@ -26,7 +26,7 @@ I learned SQL from an EdX class called [Sabermetrics 101: Introduction to Baseba
 
 **Are there any datasets that you particularly found interesting or enjoyed working with?**
 
-I like the mtcars (Motor Trend Car Road Tests) dataset used in R, but I especially liked using the Lahman Baseball Database. It is a great tool for seeing how you can use joins and calculated fields to answer questions that are typically posed in the real world.
+I like the [mtcars](https://www.rdocumentation.org/packages/datasets/versions/3.4.3/topics/mtcars) (Motor Trend Car Road Tests) dataset used in R, but I especially liked using the Lahman Baseball Database. It is a great tool for seeing how you can use joins and calculated fields to answer questions that are typically posed in the real world.
 
 *3/20/2018*
 
