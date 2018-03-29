@@ -58,6 +58,7 @@ Headlines Project
 - **TechCrunch** (advertise@techcrunch.com, joey@techcrunch.com)
 - **Hacker News** (hn@ycombinator.com)
 - **Reddit** (licensing@reddit.com, press@reddit.com)
+- **The New Yorker** (mediarequests@newyorker.com)
 
 ---
 
