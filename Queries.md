@@ -3,6 +3,7 @@
 ---
 
 **New Upload:** `./upload --workspace workspaces/learn-sql-baby-names/ --type sql`  
+
 **Old Upload:** `./upload workspaces/sql_unit_2 --type:sql`
 
 Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
