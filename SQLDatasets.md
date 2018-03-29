@@ -2,38 +2,35 @@
 
 **Final Projects**
 
-Warby Parker Final Project (styles & pricing, customer & purchases)
+- **Warby Parker** Final Project (styles & pricing, customer & purchases)
  
 Maddie Tierney (maddie.tierney@warbyparker.com)
 	EA to the CTO
 Ryan Tuck ryan.tuck@warbyparker.com
 Software Engineer (Data Engineering team) and runs their internal SQL course 
 
-**Magic Leap** (VR apps)
+- **Magic Leap** (VR apps)
 
 Ye Lu (lye@magicleap.com)
 
 Strategic Finance Manger (~3 years and college friend)
 Marketing is interested but wants Codecademy user data
 
-Twitch Final Project (Games) - Zach is sending email
+- **Twitch** Final Project (Games) - Zach is sending email
 
-Coinbase - Zach is sending email
+- **Coinbase** Zach send out an email
 
-Buffer - Hailley Giffis hailley@bufferapp.com
+- **Buffer** - Hailley Giffis hailley@bufferapp.com
 	Public Relations Manager
 
 Michael Erasmus michael@buffer.com
 Data Lead (hasn't responded)
 
-BuzzFeed - Headlines Queries/Aggregates Project
+- **BuzzFeed** - Headlines Queries/Aggregates Project
 Eugene forward email
 
 
 - The Met 				#analyst
-- Twitch (Zach) 			#analyst
-- **Kickstarter** (press@codecademy.com)
-
 - Meetup (Sonny/Catherine) 	#business
 - **Airbnb** (Catherine) (contact.press@airbnb.com)
 - Wall Street Journal (headlines)
@@ -56,12 +53,6 @@ NY-Based Companies
 - Justworks
 - Vimeo
 - opendata.cityofnewyork.us
-
-Best
-
-Grado
-Lyft
-Uber
 
 ---
 
