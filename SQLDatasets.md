@@ -54,6 +54,10 @@ NY-Based Companies
 - Vimeo
 - opendata.cityofnewyork.us
 
+Headlines Project
+- **TechCrunch** (advertise@techcrunch.com, joey@techcrunch.com)
+- **Hacker News** (hn@ycombinator.com)
+
 ---
 
 **Sample Email**
