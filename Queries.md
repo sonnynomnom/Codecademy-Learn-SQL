@@ -2,15 +2,12 @@
 
 ---
 
-./upload --workspace workspaces/learn-sql-baby-names/ --type sql
+**New Upload:** `./upload --workspace workspaces/learn-sql-baby-names/ --type sql`
+**Old Upload:** `./upload workspaces/sql_unit_2 --type:sql`
 
 Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
 
 Add file: `touch sqlite3 union.sqlite`
-
-Upload: `./upload workspaces/sql_unit_2 --type:sql`
-
-
 
 ```sql
 INSERT INTO movies(id, name, genre, year, imdb_rating) VALUES (221, 'The Good, the Bad and the Ugly', NULL, NULL, NULL);
