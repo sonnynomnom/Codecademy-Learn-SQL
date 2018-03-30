@@ -2,17 +2,17 @@
 
 ---
 
-Hillary's new upload script:
+**Hillary's new upload script:**
 
 ```bash
 ./upload --workspace workspaces/learn-sql-baby-names/ --type sql
 ```
 
-Quit: Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
+**Quit:** Type `.quit` or use <kbd>Ctrl</kbd> + <kbd>D</kbd>.
 
-Add file: `touch sqlite3 union.sqlite`
+**Add file:** `touch sqlite3 union.sqlite`
 
-Upload: `./upload workspaces/sql_unit_2 --type:sql`
+**Old Upload:** `./upload workspaces/sql_unit_2 --type:sql`
 
 
 
