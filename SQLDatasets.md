@@ -2,6 +2,10 @@
 
 **Final Projects**
 
+- **Kickstarter** (press@kickstarter.com)
+
+- Andrew Nicols, Senior Data Analyst (anicols@kickstarter.com)
+
 - **Warby Parker** Final Project (styles & pricing, customer & purchases)
  
 Maddie Tierney (maddie.tierney@warbyparker.com)
@@ -41,7 +45,6 @@ Eugene forward email
 
 NY-Based Companies
 
-- **Kickstarter** (press@kickstarter.com)
 - **Venmo** (press@venmo.com)
 - **OkCupid** (press@okcupid.com)
 - Seamless
