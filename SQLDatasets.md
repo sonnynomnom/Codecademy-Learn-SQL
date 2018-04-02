@@ -11,13 +11,13 @@
 - Maddie Tierney (maddie.tierney@warbyparker.com)
 	EA to the CTO
 - Ryan Tuck, Sofware Engineer, Data Engineering Team (ryan.tuck@warbyparker.com)
-  - runs their internal SQL course 
+  - Runs their internal SQL course 
 
 **Magic Leap** (VR apps)
 
 - Ye Lu, Strategic Finance Manager (lye@magicleap.com)
-- (~3 years and college friend)
-- Marketing is interested but wants Codecademy user data
+  - (~3 years and college friend)
+  - Marketing is interested but wants Codecademy user data
 
 **Twitch** Final Project (Games) 
 
@@ -35,12 +35,17 @@
 **BuzzFeed**
 
 - Headlines Queries/Aggregates Project
-Eugene forward email
+  - Eugene forward email
 
+**The Met** 				#analyst
 
-- The Met 				#analyst
-- Meetup (Sonny/Catherine) 	#business
-- **Airbnb** (Catherine) (contact.press@airbnb.com)
+**Meetup**
+
+- (Sonny/Catherine) 	#business
+
+**Airbnb**
+
+- (Catherine) (contact.press@airbnb.com)
 
 - Wall Street Journal (headlines)
 - The New York Times (headlines)
