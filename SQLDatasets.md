@@ -16,26 +16,32 @@
 **Magic Leap** (VR apps)
 
 - Ye Lu, Strategic Finance Manager (lye@magicleap.com)
-(~3 years and college friend)
-Marketing is interested but wants Codecademy user data
+- (~3 years and college friend)
+- Marketing is interested but wants Codecademy user data
 
-- **Twitch** Final Project (Games) - Zach is sending email
+**Twitch** Final Project (Games) 
 
-- **Coinbase** Zach send out an email
+- Zach is sending email
 
-- **Buffer** - Hailley Giffis hailley@bufferapp.com
-	Public Relations Manager
+**Coinbase** 
 
-Michael Erasmus michael@buffer.com
-Data Lead (hasn't responded)
+- Zach send out an email
 
-- **BuzzFeed** - Headlines Queries/Aggregates Project
+**Buffer** 
+
+- Hailley Giffis, Public Relations Manager (hailley@bufferapp.com)
+- Michael Erasmus, Data Lead (michael@buffer.com)
+
+**BuzzFeed**
+
+- Headlines Queries/Aggregates Project
 Eugene forward email
 
 
 - The Met 				#analyst
 - Meetup (Sonny/Catherine) 	#business
 - **Airbnb** (Catherine) (contact.press@airbnb.com)
+
 - Wall Street Journal (headlines)
 - The New York Times (headlines)
 - Spotify
