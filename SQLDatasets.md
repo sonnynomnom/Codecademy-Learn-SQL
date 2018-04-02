@@ -1,23 +1,22 @@
 # Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 
-**Final Projects**
+### Final Projects
 
-- **Kickstarter** (press@kickstarter.com)
+**Kickstarter** (press@kickstarter.com)
 
 - Andrew Nicols, Senior Data Analyst (anicols@kickstarter.com)
 
-- **Warby Parker** Final Project (styles & pricing, customer & purchases)
+**Warby Parker** Final Project (styles & pricing, customer & purchases)
  
-Maddie Tierney (maddie.tierney@warbyparker.com)
+- Maddie Tierney (maddie.tierney@warbyparker.com)
 	EA to the CTO
-Ryan Tuck ryan.tuck@warbyparker.com
-Software Engineer (Data Engineering team) and runs their internal SQL course 
+- Ryan Tuck, Sofware Engineer, Data Engineering Team (ryan.tuck@warbyparker.com)
+  - runs their internal SQL course 
 
-- **Magic Leap** (VR apps)
+**Magic Leap** (VR apps)
 
-Ye Lu (lye@magicleap.com)
-
-Strategic Finance Manger (~3 years and college friend)
+- Ye Lu, Strategic Finance Manager (lye@magicleap.com)
+(~3 years and college friend)
 Marketing is interested but wants Codecademy user data
 
 - **Twitch** Final Project (Games) - Zach is sending email
