@@ -142,7 +142,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 ```
 
 
-# News Headlines 🗞
+# Order 
 
 ```py
 import pandas as pd
@@ -189,18 +189,20 @@ cd Desktop
 touch db.sqlite
 sqlite3 db
 
-sqlite> CREATE TABLE news (
+sqlite> 
+
+CREATE TABLE orders (
    'id' INTEGER,
-   'title' TEXT,
-   'publisher' TEXT,
-   'category' TEXT,
-   'timestampe' TEXT,
-   'url' DATETIME
-   );
+   'user_id' INTEGER,
+   'order_date' DATE,
+   'restaurant_id' INTEGER,
+   'item_name' TEXT,
+   'special_instructions' TEXT
+);
    
 .mode csv
 
-.import /Users/sonny/Desktop/headlines.csv news
+.import /Users/sonny/Desktop/orders.csv orders
  
 .schema
 ```
