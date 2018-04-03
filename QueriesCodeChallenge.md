@@ -43,12 +43,12 @@ DROP TABLE StateNames;
 
 ```sql
 ALTER TABLE NationalNames
-RENAME TO baby;
+RENAME TO babies;
 ```
 
 ```sql
 DELETE FROM NationalNames
-WHERE Year < 2014;
+WHERE Year < 1990;
 ```
 
 ```sql
