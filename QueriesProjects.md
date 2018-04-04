@@ -219,8 +219,8 @@ CREATE TABLE transactions (
    'user_id' INTEGER,
    'date' DATE,
    'currency' TEXT,
-   'in' REAL,
-   'out' REAL
+   'money_in' REAL,
+   'money_out' REAL
 );
    
 .mode csv
