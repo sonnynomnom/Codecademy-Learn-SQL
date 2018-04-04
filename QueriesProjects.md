@@ -207,3 +207,25 @@ CREATE TABLE orders (
 .schema
 ```
 
+```bash
+cd Desktop
+touch db.sqlite
+sqlite3 db
+
+sqlite> 
+
+CREATE TABLE transactions (
+   'id' INTEGER,
+   'user_id' INTEGER,
+   'date' DATE,
+   'currency' TEXT,
+   'in' REAL,
+   'out' REAL
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/transactions.csv transactions
+ 
+.schema
+```
