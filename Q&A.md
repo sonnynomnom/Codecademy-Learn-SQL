@@ -1,4 +1,4 @@
-# Codecademy - [Learn SQL](https://www.codecademy.com/learn/learn-sql)
+# Codecademy - [SQL Intensive](https://www.codecademy.com/learn/learn-sql)
 
 # How do you use SQL?
 
