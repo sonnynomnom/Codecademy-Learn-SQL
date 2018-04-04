@@ -12,6 +12,21 @@
 	EA to the CTO
 - Ryan Tuck, Sofware Engineer, Data Engineering Team (ryan.tuck@warbyparker.com)
   - Runs their internal SQL course 
+  
+**Twitch** Final Project (Games) 
+
+- Zach is sending email
+
+**Coinbase** 
+
+- Zach send out an email
+
+**HackerNews** (hn@ycombinator.com)
+
+- Scott Bell, Moderator Software (scott@ycombinator.com)
+  - "We’ve been a little swamped."
+  - It’s fine to use the HR logo as long as it’s clear that it’s not an official YC or HN project. It’s not that we mind being associated, we just can’t handle any extra support emails! ;)
+
 
 **Magic Leap** (VR apps)
 
