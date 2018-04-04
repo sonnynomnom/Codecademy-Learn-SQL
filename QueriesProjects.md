@@ -228,4 +228,12 @@ CREATE TABLE transactions (
 .import /Users/sonny/Desktop/transactions.csv transactions
  
 .schema
+
+UPDATE transactions 
+SET money_in = NULL 
+WHERE money_in = "";
+
+UPDATE transactions 
+SET money_out = NULL 
+WHERE money_out = "";
 ```
