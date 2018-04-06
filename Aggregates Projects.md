@@ -153,52 +153,39 @@ import pandas as pd
 
 f = pd.read_csv("/Users/sonny/Desktop/hacker_news.csv")
 
-keep_col = ['text', 'dead', 'by', 'score', 'time', 'type', 'id', 'parent', 'descendants', 'ranking', 'deleted', 'timestamp']
-
-new_f = f[keep_col]
-
-new_f.to_csv("newFile.csv", index=False)
-```
-
-422417 x 6
-
-```py
-f2 = pd.read_csv("/Users/sonny/Desktop/newFile.csv")
-```
-
-move `url` to the right (SKIPPED)
-
-```py
-f2 = f2[['title', 'by', 'score', 'type', 'timestamp', 'url', 'text']]
+f = f[['title', 'by', 'score', 'type', 'timestamp', 'url', 'text']]
 ```
 
 only take 1000 rows:
 
 ```py
-f2 = f2[:1000]
+f = f[:1000]
 ```
 
 ```py
-f2.to_csv("hacker_news.csv", index=False)
+f.to_csv("hacker_news.csv", index=False)
 ```
+
+delete the first row
 
 ```bash
 cd Desktop
 touch db.sqlite
 sqlite3 db
 
-sqlite> CREATE TABLE news (
-   'id' INTEGER,
+sqlite> CREATE TABLE hacker_news (
    'title' TEXT,
-   'publisher' TEXT,
-   'category' TEXT,
-   'timestampe' TEXT,
-   'url' DATETIME
-   );
+   'by' TEXT,
+   'score' INTEGER,
+   'type' TEXT,
+   'timestamp' DATETIME,
+   'url' TEXT,
+   'text' TEXT
+);
    
 .mode csv
 
-.import /Users/sonny/Desktop/headlines.csv news
+.import /Users/sonny/Desktop/hacker_news.csv hacker_news
  
 .schema
 ```
