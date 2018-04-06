@@ -188,5 +188,9 @@ sqlite> CREATE TABLE hacker_news (
 .import /Users/sonny/Desktop/hacker_news.csv hacker_news
  
 .schema
+
+UPDATE hacker_news 
+SET score = NULL 
+WHERE score = "";
 ```
 
