@@ -153,7 +153,7 @@ import pandas as pd
 
 f = pd.read_csv("/Users/sonny/Desktop/hacker_news.csv")
 
-keep_col = ['ID', 'TITLE', 'URL', 'PUBLISHER', 'CATEGORY', 'TIMESTAMP']
+keep_col = ['text', 'dead', 'by', 'score', 'time', 'type', 'id', 'parent', 'descendants', 'ranking', 'deleted', 'timestamp']
 
 new_f = f[keep_col]
 
@@ -166,16 +166,10 @@ new_f.to_csv("newFile.csv", index=False)
 f2 = pd.read_csv("/Users/sonny/Desktop/newFile.csv")
 ```
 
-lowercase column names:
+move `url` to the right (SKIPPED)
 
 ```py
-f2.columns = [x.lower() for x in f2.columns]
-```
-
-move `url` to the right:
-
-```py
-f2 = f2[['id', 'title', 'publisher', 'category', 'timestamp', 'url']]
+f2 = f2[['title', 'by', 'score', 'type', 'timestamp', 'url', 'text']]
 ```
 
 only take 1000 rows:
@@ -185,7 +179,7 @@ f2 = f2[:1000]
 ```
 
 ```py
-f2.to_csv("headlines.csv", index=False)
+f2.to_csv("hacker_news.csv", index=False)
 ```
 
 ```bash
