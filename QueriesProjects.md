@@ -237,3 +237,110 @@ UPDATE transactions
 SET money_out = NULL 
 WHERE money_out = "";
 ```
+
+
+
+
+
+
+# Hacker News
+
+```bash
+python3
+```
+
+```py
+
+import pandas as pd
+
+f = pd.read_csv("/Users/sonny/Desktop/uci-news-aggregator.csv")
+
+keep_col = ['ID', 'TITLE', 'URL', 'PUBLISHER', 'CATEGORY', 'TIMESTAMP']
+
+new_f = f[keep_col]
+
+new_f.to_csv("newFile.csv", index=False)
+```
+
+422417 x 6
+
+```py
+f2 = pd.read_csv("/Users/sonny/Desktop/newFile.csv")
+```
+
+lowercase column names:
+
+```py
+f2.columns = [x.lower() for x in f2.columns]
+```
+
+move `url` to the right:
+
+```py
+f2 = f2[['id', 'title', 'publisher', 'category', 'timestamp', 'url']]
+```
+
+only take 1000 rows:
+
+```py
+f2 = f2[:1000]
+```
+
+```py
+f2.to_csv("headlines.csv", index=False)
+```
+
+```bash
+cd Desktop
+touch db.sqlite
+sqlite3 db
+
+sqlite> 
+
+CREATE TABLE orders (
+   'id' INTEGER,
+   'user_id' INTEGER,
+   'order_date' DATE,
+   'restaurant_id' INTEGER,
+   'item_name' TEXT,
+   'special_instructions' TEXT
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/orders.csv orders
+ 
+.schema
+```
+
+```bash
+cd Desktop
+touch db.sqlite
+sqlite3 db
+
+sqlite> 
+
+CREATE TABLE transactions (
+   'id' INTEGER,
+   'user_id' INTEGER,
+   'date' DATE,
+   'currency' TEXT,
+   'money_in' REAL,
+   'money_out' REAL
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/transactions.csv transactions
+ 
+.schema
+
+UPDATE transactions 
+SET money_in = NULL 
+WHERE money_in = "";
+
+UPDATE transactions 
+SET money_out = NULL 
+WHERE money_out = "";
+```
+
