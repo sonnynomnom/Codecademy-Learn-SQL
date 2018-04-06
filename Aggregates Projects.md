@@ -142,7 +142,7 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 ```
 
 
-# News Headlines 🗞
+# Hacker News 🗞
 
 ```py
 import pandas as pd
