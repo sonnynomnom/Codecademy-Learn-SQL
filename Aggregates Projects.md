@@ -144,10 +144,14 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 # Hacker News 🗞
 
+```bash
+$ python2
+```
+
 ```py
 import pandas as pd
 
-f = pd.read_csv("/Users/sonny/Desktop/uci-news-aggregator.csv")
+f = pd.read_csv("/Users/sonny/Desktop/hacker_news.csv")
 
 keep_col = ['ID', 'TITLE', 'URL', 'PUBLISHER', 'CATEGORY', 'TIMESTAMP']
 
