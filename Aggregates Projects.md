@@ -171,9 +171,9 @@ delete the first row
 ```bash
 cd Desktop
 touch db.sqlite
-sqlite3 db
+sqlite3 db.sqlite
 
-sqlite> CREATE TABLE hacker_news (
+sqlite>CREATE TABLE hacker_news (
    'title' TEXT,
    'by' TEXT,
    'score' INTEGER,
