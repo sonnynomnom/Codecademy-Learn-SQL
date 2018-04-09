@@ -192,5 +192,25 @@ sqlite> CREATE TABLE hacker_news (
 UPDATE hacker_news 
 SET score = NULL 
 WHERE score = "";
+
+UPDATE hacker_news 
+SET title = NULL 
+WHERE title = "";
+
+UPDATE hacker_news 
+SET by = NULL 
+WHERE by = "";
+
+UPDATE hacker_news 
+SET type = NULL 
+WHERE type = "";
+
+UPDATE hacker_news 
+SET url = NULL 
+WHERE url = "";
+
+UPDATE hacker_news 
+SET text = NULL 
+WHERE text = "";
 ```
 
