@@ -156,10 +156,10 @@ f = pd.read_csv("/Users/sonny/Desktop/hacker_news.csv")
 f = f[['title', 'by', 'score', 'timestamp', 'url']]
 ```
 
-only take 3000 rows:
+only take 4000 rows:
 
 ```py
-f = f[:5000]
+f = f[:3997]
 ```
 
 ```py
