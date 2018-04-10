@@ -153,13 +153,13 @@ import pandas as pd
 
 f = pd.read_csv("/Users/sonny/Desktop/hacker_news.csv")
 
-f = f[['title', 'by', 'score', 'type', 'timestamp', 'url', 'text']]
+f = f[['title', 'by', 'score', 'timestamp', 'url']]
 ```
 
 only take 3000 rows:
 
 ```py
-f = f[:3000]
+f = f[:5000]
 ```
 
 ```py
@@ -177,10 +177,8 @@ sqlite>CREATE TABLE hacker_news (
    'title' TEXT,
    'by' TEXT,
    'score' INTEGER,
-   'type' TEXT,
    'timestamp' DATETIME,
-   'url' TEXT,
-   'text' TEXT
+   'url' TEXT
 );
    
 .mode csv
@@ -202,15 +200,17 @@ SET by = NULL
 WHERE by = "";
 
 UPDATE hacker_news 
-SET type = NULL 
-WHERE type = "";
+SET timestamp = NULL 
+WHERE timestamp = "";
 
 UPDATE hacker_news 
 SET url = NULL 
 WHERE url = "";
 
-UPDATE hacker_news 
-SET text = NULL 
-WHERE text = "";
+INSERT INTO hacker_news ('Magic Leap 2.0', 'scorpiosister', 0, '2018-05-08T09:40:10Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+
+INSERT INTO hacker_news ('Codecademy Launched Intro to Data Analysis!', 'sonnynomnom', 4, '2017-12-21T10:35:12Z", "https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+
+INSERT INTO hacker_news ('One Hack, One New York', 'sonnynomnom', 0, '2017-12-30T08:25:56Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 ```
 
