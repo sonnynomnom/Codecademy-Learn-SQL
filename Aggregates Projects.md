@@ -209,7 +209,7 @@ WHERE url = "";
 
 INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('Magic Leap 2.0', 'scorpiosister', 0, '2018-05-08T09:40:10Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
-INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('Codecademy Launched Intro to Data Analysis!', 'sonnynomnom', 4, '2017-12-21T10:35:12Z", "https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('Codecademy Launched Intro to Data Analysis!', 'sonnynomnom', 4, '2017-12-21T10:35:12Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 
 INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('One Hack, One New York', 'sonnynomnom', 0, '2017-12-30T08:25:56Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 ```
