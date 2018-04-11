@@ -118,6 +118,76 @@ LIMIT 20;
 
 - Your friend has a twin named Bitly and Livly, find a name that ends with "ly".
 
+Second try:
+
+```bash
+$ python2
+```
+
+```py
+import pandas as pd
+
+f = pd.read_csv("/Users/sonny/Desktop/babies.csv")
+
+f = f[['Name', 'Year', 'Gender', 'Count']]
+```
+
+only take 3000 rows:
+
+```py
+f = f[:3000]
+```
+
+```py
+f.to_csv("babies.csv", index=False)
+```
+
+delete the first row
+
+```bash
+cd Desktop
+touch db.sqlite
+sqlite3 db.sqlite
+
+sqlite>CREATE TABLE babies (
+   'name' TEXT,
+   'year' INTEGER,
+   'gender' TEXT,
+   'number' INTEGER
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/hacker_news.csv hacker_news
+ 
+.schema
+
+UPDATE hacker_news 
+SET score = NULL 
+WHERE score = "";
+
+UPDATE hacker_news 
+SET title = NULL 
+WHERE title = "";
+
+UPDATE hacker_news 
+SET by = NULL 
+WHERE by = "";
+
+UPDATE hacker_news 
+SET timestamp = NULL 
+WHERE timestamp = "";
+
+UPDATE hacker_news 
+SET url = NULL 
+WHERE url = "";
+
+INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('Magic Leap 2.0', 'scorpiosister', 0, '2018-05-08T09:40:10Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+
+INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('Codecademy Launched Intro to Data Analysis!', 'sonnynomnom', 4, '2017-12-21T10:35:12Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+
+INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('One Hack, One New York', 'sonnynomnom', 0, '2017-12-30T08:25:56Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+```
 
 # Restaurants 🍱
 
