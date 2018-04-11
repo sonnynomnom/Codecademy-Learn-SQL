@@ -190,7 +190,7 @@ INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('Codecademy L
 INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('One Hack, One New York', 'sonnynomnom', 0, '2017-12-30T08:25:56Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 ```
 
-# The Met
+# The Met 🗿
 
 Let's look at some blin! Find all of the pieces that contain gold.
 
