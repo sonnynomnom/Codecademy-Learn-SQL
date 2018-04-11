@@ -118,30 +118,6 @@ LIMIT 20;
 
 - Your friend has a twin named Bitly and Livly, find a name that ends with "ly".
 
-
-# Restaurants 🍱
-
-```sql
-CREATE TABLE nomnom(name TEXT, neighborhood TEXT, cuisine TEXT, review INTEGER, price TEXT, health TEXT);
-
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Peter Luger Steak House', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jongro BBQ', 'Midtown', 'Korean', 4.5, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Pocha 32', 'Midtown', 'Korean', 4.0, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nom Wah Tea Parlor', 'Chinatown', 'Chinese', 4.2, '$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roberta''s', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Speedy Romeo', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Bunna Cafe', 'Brooklyn', 'Ethiopian', 4.6, '$$', 'A');
-
-```
-
-
 # Hacker News 🗞
 
 ```bash
@@ -214,3 +190,97 @@ INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('Codecademy L
 INSERT INTO hacker_news (title, by, score, timestamp, url) VALUES ('One Hack, One New York', 'sonnynomnom', 0, '2017-12-30T08:25:56Z', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 ```
 
+# The Met
+
+Let's look at some blin! Find all of the pieces that contain gold.
+
+1. Where are the artworks are coming from? COUNT GROUPBY
+2. Which artist is the MET interested in? SUM
+3. Which department hosts the largest number of artworks?
+
+4. You are asked to research the pieces created during World War II, which began in 1939 and ended in 1945. How many pieces in the collection were created during this time?
+
+5. Find the oldest piece in the collection.
+
+6. What is the total square feet across all museum locations?
+
+7. There are all kinds of things in the Met's collection. Which category of objects is most popular? Use `COUNT` and the `category` field
+
+
+
+
+```bash
+$ python2
+```
+
+```py
+import pandas as pd
+
+f = pd.read_csv("/Users/sonny/Desktop/met.csv")
+
+f = f[['Object ID', 'Department', 'Object Name', 'Title', 'Artist Display Name', 'Object Date', 'Medium', 'Country']]
+```
+
+
+only take 4000 rows:
+
+```py
+f = f[:4000]
+```
+
+```py
+f.to_csv("met.csv", index=False)
+```
+
+delete the first row
+
+```bash
+cd Desktop
+touch db.sqlite
+sqlite3 db.sqlite
+
+sqlite>CREATE TABLE met (
+   'id' INTEGER,
+   'department' TEXT,
+   'category' TEXT,
+   'title' TEXT,
+   'artist' TEXT,
+   'date' TEXT,
+   'medium' TEXT,
+   'country' TEXT
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/met.csv met
+ 
+.schema
+
+UPDATE met
+SET department = NULL 
+WHERE department = "";
+
+UPDATE met
+SET category = NULL 
+WHERE category = "";
+
+UPDATE met
+SET title = NULL 
+WHERE title = "";
+
+UPDATE met
+SET artist = NULL 
+WHERE artist = "";
+
+UPDATE met
+SET date = NULL 
+WHERE date = "";
+
+UPDATE met
+SET medium = NULL 
+WHERE medium = "";
+
+UPDATE met
+SET country = NULL 
+WHERE country = "";
+```
