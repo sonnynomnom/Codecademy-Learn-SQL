@@ -214,58 +214,43 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 # News Headlines 🗞
 
+```bash
+cd Desktop
+python2
+```
+
 ```py
 import pandas as pd
 
 f = pd.read_csv("/Users/sonny/Desktop/uci-news-aggregator.csv")
 
-keep_col = ['ID', 'TITLE', 'URL', 'PUBLISHER', 'CATEGORY', 'TIMESTAMP']
-
-new_f = f[keep_col]
-
-new_f.to_csv("newFile.csv", index=False)
+f = f[['ID', 'TITLE', 'PUBLISHER', 'CATEGORY', 'TIMESTAMP', 'URL']]
 ```
 
-422417 x 6
+only take 2000 rows:
 
 ```py
-f2 = pd.read_csv("/Users/sonny/Desktop/newFile.csv")
-```
-
-lowercase column names:
-
-```py
-f2.columns = [x.lower() for x in f2.columns]
-```
-
-move `url` to the right:
-
-```py
-f2 = f2[['id', 'title', 'publisher', 'category', 'timestamp', 'url']]
-```
-
-only take 1000 rows:
-
-```py
-f2 = f2[:1000]
+f = f[:2000]
 ```
 
 ```py
-f2.to_csv("headlines.csv", index=False)
+f.to_csv("headlines.csv", index=False)
 ```
+
+delete first row
 
 ```bash
 cd Desktop
 touch db.sqlite
-sqlite3 db
+sqlite3 db.sqlite
 
 sqlite> CREATE TABLE news (
    'id' INTEGER,
    'title' TEXT,
    'publisher' TEXT,
    'category' TEXT,
-   'timestampe' TEXT,
-   'url' DATETIME
+   'timestamp' INTEGER,
+   'url' TEXT
    );
    
 .mode csv
@@ -273,5 +258,30 @@ sqlite> CREATE TABLE news (
 .import /Users/sonny/Desktop/headlines.csv news
  
 .schema
+
+UPDATE news
+SET id = NULL
+WHERE id = "";
+
+UPDATE news
+SET title = NULL
+WHERE title = "";
+
+UPDATE news
+SET publisher = NULL
+WHERE publisher = "";
+
+UPDATE news
+SET category = NULL
+WHERE category = "";
+
+UPDATE news
+SET timestamp = NULL
+WHERE timestamp = "";
+
+UPDATE news
+SET url = NULL
+WHERE url = "";
+
 ```
 
