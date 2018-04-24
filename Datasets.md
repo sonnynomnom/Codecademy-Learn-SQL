@@ -150,7 +150,7 @@ customers
 sqlite>CREATE TABLE customers (
    'id' INTEGER,
    'first' TEXT,
-   'last' TEXT,
+   'last' TEXT
 );
    
 .mode csv
@@ -163,10 +163,10 @@ sqlite>CREATE TABLE customers (
 transactions
 
 ```sql
-sqlite>CREATE TABLE customers (
+sqlite>CREATE TABLE transactions (
    'id' INTEGER,
    'customer_id' INTEGER,
-   'date' DATE,
+   'date' DATE
 );
    
 .mode csv
@@ -176,14 +176,14 @@ sqlite>CREATE TABLE customers (
 .schema
 ```
 
-transaction items
+transaction_items
 ```sql
 sqlite>CREATE TABLE transaction_items (
    'transaction_item_id' INTEGER,
    'transaction_id' INTEGER,
    'item_id' INTEGER,
    'color_id' INTEGER,
-   'quantity' INTEGER,
+   'quantity' INTEGER
 );
    
 .mode csv
@@ -193,12 +193,13 @@ sqlite>CREATE TABLE transaction_items (
 .schema
 ```
 
+items
 
 ```sql
 sqlite>CREATE TABLE items (
    'id' INTEGER,
    'name' TEXT,
-   'price' INTEGER,
+   'price' INTEGER
 );
    
 .mode csv
@@ -212,7 +213,7 @@ sqlite>CREATE TABLE items (
 ```sql
 sqlite>CREATE TABLE colors (
    'id' INTEGER,
-   'name' TEXT,
+   'name' TEXT
 );
    
 .mode csv
