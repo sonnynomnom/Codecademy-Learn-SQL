@@ -144,66 +144,80 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 
 ```
 
+customers
+
 ```sql
-
-$ python2
-import pandas as pd
-
-f = pd.read_csv("/Users/sonny/Desktop/met.csv")
-
-f = f[['Object ID', 'Department', 'Object Name', 'Title', 'Artist Display Name', 'Object Date', 'Medium', 'Country']]
-only take 4000 rows:
-
-f = f[:4000]
-f.to_csv("met.csv", index=False)
-delete the first row
-
-cd Desktop
-touch db.sqlite
-sqlite3 db.sqlite
-
-sqlite>CREATE TABLE met (
+sqlite>CREATE TABLE customers (
    'id' INTEGER,
-   'department' TEXT,
-   'category' TEXT,
-   'title' TEXT,
-   'artist' TEXT,
-   'date' TEXT,
-   'medium' TEXT,
-   'country' TEXT
+   'first' TEXT,
+   'last' TEXT,
 );
    
 .mode csv
 
-.import /Users/sonny/Desktop/met.csv met
+.import /Users/sonny/Desktop/warby/customers.csv customers
  
 .schema
+```
 
-UPDATE met
-SET department = NULL 
-WHERE department = "";
+transactions
 
-UPDATE met
-SET category = NULL 
-WHERE category = "";
+```sql
+sqlite>CREATE TABLE customers (
+   'id' INTEGER,
+   'customer_id' INTEGER,
+   'date' DATE,
+);
+   
+.mode csv
 
-UPDATE met
-SET title = NULL 
-WHERE title = "";
+.import /Users/sonny/Desktop/warby/transactions.csv transactions
+ 
+.schema
+```
 
-UPDATE met
-SET artist = NULL 
-WHERE artist = "";
+transaction items
+```sql
+sqlite>CREATE TABLE transaction_items (
+   'transaction_item_id' INTEGER,
+   'transaction_id' INTEGER,
+   'item_id' INTEGER,
+   'color_id' INTEGER,
+   'quantity' INTEGER,
+);
+   
+.mode csv
 
-UPDATE met
-SET date = NULL 
-WHERE date = "";
+.import /Users/sonny/Desktop/warby/tansaction_items.csv transaction_items
+ 
+.schema
+```
 
-UPDATE met
-SET medium = NULL 
-WHERE medium = "";
 
-UPDATE met
-SET country = NULL 
-WHERE country = "";
+```sql
+sqlite>CREATE TABLE items (
+   'id' INTEGER,
+   'name' TEXT,
+   'price' INTEGER,
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/warby/items.csv items
+ 
+.schema
+```
+
+
+```sql
+sqlite>CREATE TABLE colors (
+   'id' INTEGER,
+   'name' TEXT,
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/warby/colors.csv colors
+ 
+.schema
 ```
