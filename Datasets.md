@@ -188,7 +188,7 @@ sqlite>CREATE TABLE transaction_items (
    
 .mode csv
 
-.import /Users/sonny/Desktop/warby/tansaction_items.csv transaction_items
+.import /Users/sonny/Desktop/warby/transaction_items.csv transaction_items
  
 .schema
 ```
