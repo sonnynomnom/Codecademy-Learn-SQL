@@ -141,3 +141,69 @@ INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roberta''s', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
 
 INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Speedy Romeo', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
+
+```
+
+```sql
+
+$ python2
+import pandas as pd
+
+f = pd.read_csv("/Users/sonny/Desktop/met.csv")
+
+f = f[['Object ID', 'Department', 'Object Name', 'Title', 'Artist Display Name', 'Object Date', 'Medium', 'Country']]
+only take 4000 rows:
+
+f = f[:4000]
+f.to_csv("met.csv", index=False)
+delete the first row
+
+cd Desktop
+touch db.sqlite
+sqlite3 db.sqlite
+
+sqlite>CREATE TABLE met (
+   'id' INTEGER,
+   'department' TEXT,
+   'category' TEXT,
+   'title' TEXT,
+   'artist' TEXT,
+   'date' TEXT,
+   'medium' TEXT,
+   'country' TEXT
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/met.csv met
+ 
+.schema
+
+UPDATE met
+SET department = NULL 
+WHERE department = "";
+
+UPDATE met
+SET category = NULL 
+WHERE category = "";
+
+UPDATE met
+SET title = NULL 
+WHERE title = "";
+
+UPDATE met
+SET artist = NULL 
+WHERE artist = "";
+
+UPDATE met
+SET date = NULL 
+WHERE date = "";
+
+UPDATE met
+SET medium = NULL 
+WHERE medium = "";
+
+UPDATE met
+SET country = NULL 
+WHERE country = "";
+```
