@@ -204,7 +204,7 @@ sqlite>CREATE TABLE colors (
 .schema
 ```
 
-Marketing Funnels
+## Marketing Funnels
 
 home_try_on
 
@@ -240,3 +240,20 @@ sqlite>CREATE TABLE purchase (
 .schema
 ```
 
+quiz
+
+```sql
+sqlite>CREATE TABLE quiz (
+   'user_id' TEXT,
+   'style' TEXT,
+   'fit' TEXT,
+   'shape' TEXT,
+   'color' TEXT
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/warby-parker/quiz.csv quiz
+ 
+.schema
+```
