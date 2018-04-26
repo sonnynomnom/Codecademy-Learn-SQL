@@ -230,6 +230,7 @@ sqlite>CREATE TABLE purchase (
    'product_id' INTEGER,
    'style' TEXT,
    'model_name' TEXT,
+   'color' TEXT,
    'price' INTEGER
 );
    
@@ -262,14 +263,15 @@ survey
 
 ```sql
 sqlite>CREATE TABLE survey (
-   'question_text' TEXT,
+   'question' TEXT,
    'user_id' TEXT,
    'response' TEXT
 );
    
 .mode csv
 
-.import /Users/sonny/Desktop/warby-parker/survey.csv quiz
+.import /Users/sonny/Desktop/warby-parker/survey.csv survey
+
  
 .schema
 ```
