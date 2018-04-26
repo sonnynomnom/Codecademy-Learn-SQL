@@ -125,25 +125,6 @@ Codecademy
 
 # Warby Parker 👓
 
-```sql
-
-CREATE TABLE customers(id INTEGER, first TEXT, last TEXT);
-
-
-INSERT INTO customers(id, first, last, review, price, health) VALUES ('Peter Luger Steak House', 'Brooklyn', 'Steak', 4.4, '$$$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Jongro BBQ', 'Midtown', 'Korean', 4.5, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Pocha 32', 'Midtown', 'Korean', 4.0, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Nom Wah Tea Parlor', 'Chinatown', 'Chinese', 4.2, '$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Roberta''s', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
-
-INSERT INTO nomnom(name, neighborhood, cuisine, review, price, health) VALUES ('Speedy Romeo', 'Brooklyn', 'Pizza', 4.4, '$$', 'A');
-
-```
-
 customers
 
 ```sql
@@ -222,3 +203,40 @@ sqlite>CREATE TABLE colors (
  
 .schema
 ```
+
+Marketing Funnels
+
+home_try_on
+
+```sql
+sqlite>CREATE TABLE home_try_on (
+   'user_id' TEXT,
+   'number_of_pairs' TEXT,
+   'address' TEXT
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/warby/home_try_on.csv home_try_on
+ 
+.schema
+```
+
+purchase
+
+```sql
+sqlite>CREATE TABLE purchase (
+   'user_id' TEXT,
+   'product_id' INTEGER,
+   'style' TEXT,
+   'model_name' TEXT,
+   'price' INTEGER
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/warby/purchase.csv purchase
+ 
+.schema
+```
+
