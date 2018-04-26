@@ -257,3 +257,19 @@ sqlite>CREATE TABLE quiz (
  
 .schema
 ```
+
+survey
+
+```sql
+sqlite>CREATE TABLE survey (
+   'question_text' TEXT,
+   'user_id' TEXT,
+   'response' TEXT
+);
+   
+.mode csv
+
+.import /Users/sonny/Desktop/warby-parker/survey.csv quiz
+ 
+.schema
+```
