@@ -217,7 +217,7 @@ sqlite>CREATE TABLE home_try_on (
    
 .mode csv
 
-.import /Users/sonny/Desktop/warby/home_try_on.csv home_try_on
+.import /Users/sonny/Desktop/warby-parker/home_try_on.csv home_try_on
  
 .schema
 ```
@@ -235,7 +235,7 @@ sqlite>CREATE TABLE purchase (
    
 .mode csv
 
-.import /Users/sonny/Desktop/warby/purchase.csv purchase
+.import /Users/sonny/Desktop/warby-parker/purchase.csv purchase
  
 .schema
 ```
