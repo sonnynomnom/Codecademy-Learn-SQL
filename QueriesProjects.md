@@ -205,6 +205,10 @@ CREATE TABLE orders (
 .import /Users/sonny/Desktop/orders.csv orders
  
 .schema
+
+UPDATE orders 
+SET special_instructions = NULL 
+WHERE special_instructions = "";
 ```
 
 ```bash
