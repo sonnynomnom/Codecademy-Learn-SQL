@@ -400,7 +400,7 @@ python3
 
 import pandas as pd
 
-f = pd.read_csv("/Users/sonny/Desktop/twitch/chat.csv")
+f = pd.read_csv("/Users/sonny/Desktop/twitch/stream.csv")
 ```
 
 Delete first row in .csv and then:
@@ -451,76 +451,61 @@ f2.to_csv("headlines.csv", index=False)
 
 ```bash
 cd Desktop
-touch db.sqlite
 sqlite3 db
 
 sqlite> 
 
-CREATE TABLE orders (
-   'id' INTEGER,
-   'user_id' INTEGER,
-   'order_date' DATE,
-   'restaurant_id' INTEGER,
-   'item_name' TEXT,
-   'special_instructions' TEXT
-);
-   
-.mode csv
-
-.import /Users/sonny/Desktop/orders.csv orders
- 
-.schema
-```
-
-
-```bash
-cd Desktop
-touch db.sqlite
-sqlite3 db
-
-sqlite> 
-
-CREATE TABLE chat (
+CREATE TABLE stream (
    'time' DATETIME,
    'device_id' TEXT,
    'login' TEXT,
    'channel' TEXT,
    'country' TEXT,
    'player' TEXT,
-   'game' TEXT
+   'game' TEXT,
+   'stream_format' TEXT,
+   'subscriber' TEXT
 );
    
 .mode csv
 
-.import /Users/sonny/Desktop/chat.csv chat
+.import /Users/sonny/Desktop/stream.csv stream
  
 .schema
 
-UPDATE chat 
+UPDATE stream 
 SET time = NULL 
 WHERE time = "";
 
-UPDATE chat
+UPDATE stream 
 SET device_id = NULL 
 WHERE device_id = "";
 
-UPDATE chat
+UPDATE stream 
 SET login = NULL 
 WHERE login = "";
 
-UPDATE chat
+UPDATE stream 
 SET channel = NULL 
 WHERE channel = "";
 
-UPDATE chat
+UPDATE stream 
 SET country = NULL 
 WHERE country = "";
 
-UPDATE chat
+UPDATE stream 
 SET player = NULL 
 WHERE player = "";
 
-UPDATE chat
+UPDATE stream 
 SET game = NULL 
 WHERE game = "";
+
+UPDATE stream 
+SET stream_format = NULL 
+WHERE stream_format = "";
+
+UPDATE stream 
+SET subscriber = NULL 
+WHERE subscriber = "";
 ```
